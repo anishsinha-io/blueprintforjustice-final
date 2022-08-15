@@ -15,20 +15,11 @@
 # along with this program.  If not, see http://www.gnu.org/licenses/.
 #
 
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, redirect, url_for
 from app.resources.services.links import get_space_links, ping_all, get_all_links
 from app import limiter
 
 module = Blueprint("resources", __name__, url_prefix="/resources")
-
-
-# @route <protocol>:host:<port?>/api/resources?resource=<resource> | example: http://localhost:8888/api/resources?resource=legal
-# this route refreshes all the links the SQLite database to ensure their validity
-@module.route("/")
-def get_resources():
-    qs = request.args
-    return get_space_links(qs.get("resource"))
-
 
 # @route <protocol>:host:<port?>/api/resources/refresh | example: http://localhost:8888/api/resources/refresh
 # this route refreshes all the links the SQLite database to ensure their validity
@@ -39,6 +30,20 @@ def refresh_links():
     return jsonify(ping_all())
 
 
+# @route <protocol>:host<port?>/api/resources/all | example: http://localhost:8888/api/resources/all
+# this route gets all links in the SQLite database and returns them in json form
+# this route is not rate limited beyond the defaults
 @module.route("/all")
 def get_all():
     return jsonify(get_all_links())
+
+
+# @route <protocol>:host:<port?>/api/resources?resource=<resource> | example: http://localhost:8888/api/resources?resource=legal
+# this route gets all links attributed to the given resource space and returns it in json form
+# this route is not rate limited beyond the defaults
+@module.route("/")
+def get_resources():
+    qs = request.args
+    if not qs.get("resource"):
+        return redirect(url_for("resources.get_all"))
+    return get_space_links(qs.get("resource"))
