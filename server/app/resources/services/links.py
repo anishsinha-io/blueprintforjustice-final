@@ -29,14 +29,22 @@ def ping_all():
     sql = "SELECT * FROM links"
     conn = get_conn()
     cursor = conn.cursor()
-    rows = cursor.execute(sql)
+    rows = cursor.execute(sql).fetchall()
+    print("here")
     for row in rows:
+        print("within loop")
         row = dict(row)
         if not ping(row["href"]):
+            print("reached condition of invalid link")
             sql = "UPDATE links SET valid=? WHERE id=?"
             cursor.execute(sql, [False, row["id"]])
             conn.commit()
-    return rows
+        else:
+            sql = "UPDATE links SET valid=? WHERE id=?"
+            if row["valid"] == False:
+                cursor.execute(sql, [True, row["id"]])
+                conn.commit()
+    return "{msg: successfully refreshed all links}"
 
 
 # get an array of space categories that will be used as dict keys in get_valid_links

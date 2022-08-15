@@ -25,7 +25,7 @@ module = Blueprint("resources", __name__, url_prefix="/resources")
 # this route refreshes all the links the SQLite database to ensure their validity
 # this route is rate limited to 1 call per hour to prevent abuse
 @module.route("/refresh")
-@limiter.limit("1 per hour")
+# @limiter.limit("1 per hour")
 def refresh_links():
     return jsonify(ping_all())
 
