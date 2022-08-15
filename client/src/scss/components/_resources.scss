@@ -1,0 +1,53 @@
+/** Blueprint For Justice
+ ** Copyright (C) 2022 Anish Sinha
+ **
+ ** This program is free software: you can redistribute it and/or modify
+ ** it under the terms of the GNU General Public License as published by
+ ** the Free Software Foundation, either version 3 of the License, or
+ ** (at your option) any later version.
+ **
+ ** This program is distributed in the hope that it will be useful,
+ ** but WITHOUT ANY WARRANTY; without even the implied warranty of
+ ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ ** GNU General Public License for more details.
+ **
+ ** You should have received a copy of the GNU General Public License
+ ** along with this program.  If not, see http://www.gnu.org/licenses/.
+ **/
+
+.app-resources {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.resources-description {
+  width: 90%;
+  padding: 3rem;
+  font-size: 1.5rem;
+  @media screen and (max-width: $small-screen-width) {
+    text-align: center;
+  }
+}
+
+.resources-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  & > div {
+    border-radius: 1rem;
+  }
+  gap: 4rem;
+  place-items: center;
+  padding: 1rem;
+  @media screen and (max-width: $medium-screen-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  @media screen and (max-width: $small-screen-width) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

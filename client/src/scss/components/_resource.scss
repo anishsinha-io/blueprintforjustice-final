@@ -1,0 +1,106 @@
+/** Blueprint For Justice
+ ** Copyright (C) 2022 Anish Sinha
+ **
+ ** This program is free software: you can redistribute it and/or modify
+ ** it under the terms of the GNU General Public License as published by
+ ** the Free Software Foundation, either version 3 of the License, or
+ ** (at your option) any later version.
+ **
+ ** This program is distributed in the hope that it will be useful,
+ ** but WITHOUT ANY WARRANTY; without even the implied warranty of
+ ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ ** GNU General Public License for more details.
+ **
+ ** You should have received a copy of the GNU General Public License
+ ** along with this program.  If not, see http://www.gnu.org/licenses/.
+ **/
+
+.app-resource {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+  @media screen and (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.block-container {
+  h1 {
+    font-size: 1.75rem;
+    text-decoration: underline;
+  }
+  padding-bottom: 1rem;
+}
+
+.resource-block {
+  padding-bottom: 1rem;
+  &__link,
+  &__description {
+    font-size: 1.5rem;
+  }
+}
+
+.resource-title {
+  font-size: 2rem;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+
+.resource-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.link-heading {
+  transition: all 0.25s ease;
+  font-weight: 300;
+  color: $rose;
+  &:hover {
+    color: $green;
+    font-size: 1.525rem;
+  }
+}
+
+.link-heading-dark {
+  transition: all 0.25s ease;
+  color: $green;
+  &:hover {
+    color: $rose;
+    font-size: 1.525rem;
+  }
+}
+
+.resource-header {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  justify-items: center;
+  &__name {
+    font-size: 1.65rem;
+    text-decoration: underline;
+    text-align: center;
+  }
+}
+
+.resource {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  &__subheading {
+    font-size: 1.75rem;
+    color: $rose;
+    &--dark {
+      font-size: 1.75rem;
+      color: $green;
+      margin-bottom: 1rem;
+    }
+    margin-bottom: 1rem;
+  }
+  &__content {
+    margin-bottom: 2rem;
+  }
+}

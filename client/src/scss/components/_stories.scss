@@ -1,0 +1,67 @@
+.app-stories {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: $medium-screen-width) {
+    grid-template-columns: 1fr;
+  }
+  justify-items: center;
+  &__title {
+    width: 95%;
+    h1 {
+      font-size: 2.25rem;
+    }
+    font-size: 1.5rem;
+    grid-column: 1/3;
+    @media screen and (max-width: $medium-screen-width) {
+      width: 85%;
+      text-align: center;
+      grid-column: 1/2;
+    }
+  }
+  &__img {
+    display: grid;
+    justify-items: center;
+    position: relative;
+  }
+  &__description {
+    display: grid;
+    align-items: center;
+    @media screen and (max-width: $medium-screen-width) {
+      justify-items: center;
+    }
+  }
+}
+
+.stories-img {
+  width: 80%;
+  border-radius: 1rem;
+  filter: grayscale(100);
+  border: 1px solid $dark-gray;
+  &--overlay {
+    filter: brightness(0.5) grayscale(100);
+    cursor: pointer;
+    border: 2px solid $white;
+  }
+}
+
+.stories-description {
+  font-size: 1.25rem;
+  @media screen and (max-width: $medium-screen-width) {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.film-link {
+  position: absolute;
+  margin: 0 auto;
+  top: 40%;
+  left: 45%;
+  width: 10%;
+  &--hidden {
+    display: none;
+  }
+}

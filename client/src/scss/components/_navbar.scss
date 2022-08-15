@@ -1,0 +1,215 @@
+/** Blueprint For Justice
+ ** Copyright (C) 2022 Anish Sinha
+ **
+ ** This program is free software: you can redistribute it and/or modify
+ ** it under the terms of the GNU General Public License as published by
+ ** the Free Software Foundation, either version 3 of the License, or
+ ** (at your option) any later version.
+ **
+ ** This program is distributed in the hope that it will be useful,
+ ** but WITHOUT ANY WARRANTY; without even the implied warranty of
+ ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ ** GNU General Public License for more details.
+ **
+ ** You should have received a copy of the GNU General Public License
+ ** along with this program.  If not, see http://www.gnu.org/licenses/.
+ **/
+
+.app-navbar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  @media screen and (max-width: $medium-screen-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: $mobile-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  &__logo {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    @media screen and (max-width: $medium-screen-width) {
+      .logo-text {
+        display: none;
+      }
+    }
+  }
+  &__about,
+  &__resources,
+  &__contact,
+  &__switch {
+    font-size: 1.5rem;
+    width: 100%;
+    &:hover {
+      color: $rose;
+      font-size: 1.53rem;
+    }
+    transition: all 0.25s ease-in;
+    @media screen and (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  &__about--dark,
+  &__resources--dark,
+  &__contact--dark {
+    font-size: 1.5rem;
+    width: 100%;
+    &:hover {
+      color: $green;
+      font-size: 1.53rem;
+    }
+    transition: all 0.25s ease-in;
+    @media screen and (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  &__switch {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-top: 0.25rem;
+    .switch-container {
+      display: flex;
+      place-items: center;
+    }
+    @media screen and (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+  &__mobilemenu {
+    display: none;
+    @media screen and (max-width: $mobile-width) {
+      display: block;
+      justify-self: right;
+    }
+  }
+  &__mobilemenu--dark {
+    display: none;
+    @media screen and (max-width: $mobile-width) {
+      display: block;
+      justify-self: right;
+    }
+  }
+}
+
+.mobile-options {
+  z-index: 10000;
+  .mobile-resources__options {
+    padding: 0.5rem;
+    background-color: $dark-gray;
+    color: $light-gray;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+
+    div {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      padding-bottom: 0.25rem;
+      transition: all 0.25s ease-in;
+      &:hover {
+        font-size: 1.3rem;
+        color: $rose;
+        transition: all 0.25s ease-in;
+      }
+    }
+  }
+}
+
+.mobile-options--dark {
+  z-index: 10000;
+  .mobile-resources--dark__options {
+    padding: 0.5rem;
+    background-color: $dark-gray;
+    color: $light-gray;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    div {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      padding-bottom: 0.25rem;
+      transition: all 0.25s ease-in;
+      &:hover {
+        font-size: 1.3rem;
+        color: $green;
+        transition: all 0.25s ease-in;
+      }
+    }
+  }
+}
+
+.navbar-resources {
+  z-index: 10000;
+  .navbar-resources__options {
+    padding: 0.5rem;
+    background-color: $dark-gray;
+    color: $light-gray;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+
+    div {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      padding-bottom: 0.25rem;
+      transition: all 0.25s ease-in;
+      &:hover {
+        font-size: 1.3rem;
+        color: $rose;
+        transition: all 0.25s ease-in;
+      }
+    }
+  }
+}
+
+.navbar-resources--dark {
+  z-index: 10000;
+  .navbar-resources--dark__options {
+    padding: 0.5rem;
+    background-color: $dark-gray;
+    color: $light-gray;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+
+    div {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      padding-bottom: 0.25rem;
+      transition: all 0.25s ease-in;
+      &:hover {
+        font-size: 1.3rem;
+        color: $green;
+        transition: all 0.25s ease-in;
+      }
+    }
+  }
+}
+
+#switch-moon {
+  margin-left: 0.5rem;
+}
+
+#logo {
+  display: none;
+  @media screen and (max-width: $medium-screen-width) {
+    display: block;
+  }
+}
+
+.mobile-options__options {
+  min-width: 10rem;
+  padding: 0.5rem;
+  background-color: $dark-gray;
+  color: $light-gray;
+  border-radius: 0.5rem;
+}
+
+.mobile-options--dark__options {
+  min-width: 8rem;
+  padding: 0.5rem;
+  background-color: $dark-gray;
+  color: $light-gray;
+  border-radius: 0.5rem;
+}
