@@ -17,11 +17,16 @@
 
 import os
 import argparse
-from app import create_app
+from app import create_app, limiter
 
+# initialize app and rate limiter
 server = create_app()
+limiter.init_app(server)
 
 if __name__ == "__main__":
+    # when running in development mode (i.e. something like: python wsgi.py) in the terminal, add --development=true to enable the
+    # debugger which is disabled in default. in production, this app runs with gunicorn, so the above doesn't apply. the command to
+    # run the app in production is: gunicorn --bind 0.0.0.0:8888 -w 4 wsgi:server in the directory where wsgi.py is a file
     parser = argparse.ArgumentParser(description="setup options")
     parser.add_argument("--development")
     args = parser.parse_args()

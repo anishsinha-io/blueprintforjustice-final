@@ -19,11 +19,12 @@ import requests
 from app import get_conn
 
 
+# determine validity of a link
 def ping(href: str) -> bool:
     return requests.get(href).status_code == 200
 
 
-# limiter.limit("1/minute")(bp1)
+# determine validity of all links and update their `valid` attribute in the database
 def ping_all():
     sql = "SELECT * FROM links"
     conn = get_conn()
@@ -38,6 +39,7 @@ def ping_all():
     return rows
 
 
+# get an array of space categories that will be used as dict keys in get_valid_links
 def get_space_categories(space: str) -> list[str]:
     conn = get_conn()
     categories: list[str] = []
@@ -50,7 +52,8 @@ def get_space_categories(space: str) -> list[str]:
     return categories
 
 
-def get_valid_links(space: str) -> dict:
+# get all links in a space
+def get_space_links(space: str) -> dict:
     conn = get_conn()
     categories: list[str] = get_space_categories(space)
     out: dict = {}
@@ -70,4 +73,16 @@ def get_valid_links(space: str) -> dict:
     for key in out:
         if len(out[key]) == 0:
             del out[key]
+    return out
+
+
+def get_all_links() -> list[dict]:
+    conn = get_conn()
+    sql = "SELECT * FROM links"
+    cursor = conn.cursor()
+    rows = cursor.execute(sql)
+    out = []
+    for row in rows:
+        row = dict(row)
+        out.append(row)
     return out

@@ -16,6 +16,7 @@
 #
 
 
+# this class is used to prefix every route in the app with /api
 class PrefixMiddleware(object):
     def __init__(self, app, prefix=""):
         self.app = app
