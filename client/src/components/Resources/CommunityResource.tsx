@@ -27,6 +27,8 @@ import SettingsCtx from "components/ctx";
 
 import getBaseUrl from "config";
 
+import { shouldRefreshLinks } from "components/Resources/refresh";
+
 const CommunityResource = () => {
   const ctx = useContext(SettingsCtx);
   const [linkData, setLinkData] = useState<LinkData>({});
@@ -35,6 +37,7 @@ const CommunityResource = () => {
   const getLinks = async () => {
     const res = await axios.get(`${getBaseUrl()}/resources?resource=community`);
     const data = await res.data;
+
     setLinkData(data);
     setLoading(false);
   };

@@ -30,12 +30,9 @@ def ping_all():
     conn = get_conn()
     cursor = conn.cursor()
     rows = cursor.execute(sql).fetchall()
-    print("here")
     for row in rows:
-        print("within loop")
         row = dict(row)
         if not ping(row["href"]):
-            print("reached condition of invalid link")
             sql = "UPDATE links SET valid=? WHERE id=?"
             cursor.execute(sql, [False, row["id"]])
             conn.commit()
@@ -45,6 +42,30 @@ def ping_all():
                 cursor.execute(sql, [True, row["id"]])
                 conn.commit()
     return "{msg: successfully refreshed all links}"
+
+
+# determine validity of all links in a given space and update their `valid` attribute in the database
+def ping_by_resource(space: str | None = None):
+    sql = ""
+    if not space:
+        sql = "SELECT * FROM links"
+    else:
+        sql = "SELECT * FROM links WHERE space=?"
+    conn = get_conn()
+    cursor = conn.cursor()
+    rows = cursor.execute(sql, [space.capitalize()] if space else []).fetchall()
+    for row in rows:
+        row = dict(row)
+        if not ping(row["href"]):
+            sql = "UPDATE links SET valid=? WHERE id=?"
+            cursor.execute(sql, [False, row["id"]])
+            conn.commit()
+        else:
+            sql = "UPDATE links SET valid=? WHERE id=?"
+            if row["valid"] == False:
+                cursor.execute(sql, [True, row["id"]])
+                conn.commit()
+    return f"{{msg: successfully refreshed all requested links}}"
 
 
 # get an array of space categories that will be used as dict keys in get_valid_links
@@ -78,9 +99,9 @@ def get_space_links(space: str) -> dict:
         del row["valid"]
         if row_valid:
             out[row_category].append(row)
-    for key in out:
-        if len(out[key]) == 0:
-            del out[key]
+    for k, d in out.items():
+        if len(d) == 0:
+            del k
     return out
 
 

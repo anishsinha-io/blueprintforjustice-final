@@ -24,7 +24,7 @@ import ResourceBlock from "components/Resources/ResourceBlock";
 import SettingsCtx from "components/ctx";
 
 import ResourceLoading from "components/Resources/ResourceLoading";
-
+import { shouldRefreshLinks } from "components/Resources/refresh";
 import getBaseUrl from "config";
 
 const HealingResource = () => {
@@ -36,6 +36,7 @@ const HealingResource = () => {
   const getLinks = async () => {
     const res = await axios.get(`${getBaseUrl()}/resources?resource=healing`);
     const data = await res.data;
+
     setLinkData(data);
     setLoading(false);
   };

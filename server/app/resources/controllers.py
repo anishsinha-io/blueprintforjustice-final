@@ -15,9 +15,10 @@
 # along with this program.  If not, see http://www.gnu.org/licenses/.
 #
 
-from flask import Blueprint, request, jsonify, redirect, url_for
-from app.resources.services.links import get_space_links, ping_all, get_all_links
+from flask import Blueprint, request, jsonify, redirect, url_for, request
+from app.resources.services.links import get_space_links, get_all_links
 from app import limiter
+from app.resources.services.links import ping_by_resource
 
 module = Blueprint("resources", __name__, url_prefix="/resources")
 
@@ -25,9 +26,12 @@ module = Blueprint("resources", __name__, url_prefix="/resources")
 # this route refreshes all the links the SQLite database to ensure their validity
 # this route is rate limited to 1 call per hour to prevent abuse
 @module.route("/refresh")
-# @limiter.limit("1 per hour")
+@limiter.limit("1 per day")
 def refresh_links():
-    return jsonify(ping_all())
+    qs = request.args
+    if not qs.get("resource"):
+        return ping_by_resource()
+    return ping_by_resource(space=qs.get("resource"))
 
 
 # @route <protocol>:host<port?>/api/resources/all | example: http://localhost:8888/api/resources/all

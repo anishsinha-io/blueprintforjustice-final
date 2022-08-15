@@ -26,6 +26,7 @@ import ResourceLoading from "components/Resources/ResourceLoading";
 import SettingsCtx from "components/ctx";
 
 import getBaseUrl from "config";
+import { shouldRefreshLinks } from "components/Resources/refresh";
 
 const ActionResource = () => {
   const ctx = useContext(SettingsCtx);
@@ -33,8 +34,9 @@ const ActionResource = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   const getLinks = async () => {
-    const res = await axios.get(`${getBaseUrl()}/resources/?resource=action`);
+    const res = await axios.get(`${getBaseUrl()}/resources?resource=action`);
     const data = await res.data;
+
     setLinkData(data);
     setLoading(false);
   };

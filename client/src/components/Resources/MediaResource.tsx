@@ -24,7 +24,7 @@ import ResourceBlock from "components/Resources/ResourceBlock";
 import ResourceLoading from "components/Resources/ResourceLoading";
 
 import SettingsCtx from "components/ctx";
-
+import { shouldRefreshLinks } from "components/Resources/refresh";
 import getBaseUrl from "config";
 
 const MediaResource = () => {

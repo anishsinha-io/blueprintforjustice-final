@@ -1,6 +1,5 @@
 *.env
 node_modules
-scripts/
 logs/
 *.sqlite3
 *.env.*

@@ -31,6 +31,8 @@ import SettingsCtx, {
   getDarkModeSetting,
 } from "components/ctx";
 
+import { setRefreshLinks, getRefreshLinks } from "components/Resources/refresh";
+
 const App = () => {
   // get the user's dark mode preference
   const darkModeSetting: boolean = localStorage.getItem("darkmode")
@@ -41,6 +43,7 @@ const App = () => {
   const [promptQuestionnaire, setPromptQuestionnaire] = useState<boolean>(
     getPromptQuestionnaire()
   );
+  if (!getRefreshLinks()) setRefreshLinks();
   return (
     <Router>
       <SettingsCtx.Provider
