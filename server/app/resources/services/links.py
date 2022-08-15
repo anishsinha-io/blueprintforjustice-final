@@ -6,6 +6,7 @@ def ping(href: str) -> bool:
     return requests.get(href).status_code == 200
 
 
+# limiter.limit("1/minute")(bp1)
 def ping_all():
     sql = "SELECT * FROM links"
     conn = get_conn()
@@ -17,6 +18,7 @@ def ping_all():
             sql = "UPDATE links SET valid=? WHERE id=?"
             cursor.execute(sql, [False, row["id"]])
             conn.commit()
+    return rows
 
 
 def get_space_categories(space: str) -> list[str]:
