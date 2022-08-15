@@ -76,6 +76,7 @@ def get_space_links(space: str) -> dict:
     return out
 
 
+# get all links with no specification
 def get_all_links() -> list[dict]:
     conn = get_conn()
     sql = "SELECT * FROM links"
