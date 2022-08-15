@@ -4,3 +4,5 @@ logs/
 *.sqlite3
 *.env.*
 __pycache__/
+*.sql
+all-links.csv
