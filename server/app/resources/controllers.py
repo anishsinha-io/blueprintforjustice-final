@@ -22,18 +22,6 @@ from app.resources.services.links import ping_by_resource
 
 module = Blueprint("resources", __name__, url_prefix="/resources")
 
-# @route <protocol>:host:<port?>/api/resources/refresh | example: http://localhost:8888/api/resources/refresh
-# this route refreshes all the links the SQLite database to ensure their validity
-# this route is rate limited to 1 call per hour to prevent abuse
-@module.route("/refresh")
-@limiter.limit("1 per day")
-def refresh_links():
-    qs = request.args
-    if not qs.get("resource"):
-        return ping_by_resource()
-    return ping_by_resource(space=qs.get("resource"))
-
-
 # @route <protocol>:host<port?>/api/resources/all | example: http://localhost:8888/api/resources/all
 # this route gets all links in the SQLite database and returns them in json form
 # this route is not rate limited beyond the defaults

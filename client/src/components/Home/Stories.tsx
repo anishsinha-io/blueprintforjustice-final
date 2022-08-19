@@ -11,7 +11,7 @@ const Stories = () => {
     <section className="app-stories">
       <div className="app-stories__title">
         <div className="stories-title">
-          <h1>Hear about stories from the mothers of the movement</h1>
+          <h1>Stories from the mothers of the movement</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
             quasi earum eaque molestias nam voluptatem iste velit unde, qui sint

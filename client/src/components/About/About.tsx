@@ -83,7 +83,7 @@ const About = () => {
           onClick={() => setShowWebsiteTeam(() => !showWebsiteTeam)}
           className={`show-more__icon show-more__icon${
             ctx.darkmode ? "--dark" : ""
-          } ${showWebsiteTeam && "flipped"}`}
+          } ${showWebsiteTeam || "flipped"}`}
         />
       </div>
       {showWebsiteTeam && <Credits />}

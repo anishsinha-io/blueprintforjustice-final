@@ -50,13 +50,13 @@ const resourceMap: { [category: string]: (props: any) => JSX.Element } = {
 const BaseResourcePage: React.FC<{ category: string }> = ({ category }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    const refresh = async () => {
-      if (shouldRefreshLinks()) {
-        await axios.get(`${getBaseUrl()}/resources/refresh`);
-        setRefreshLinks();
-      }
-    };
-    refresh();
+    // const refresh = async () => {
+    //   if (shouldRefreshLinks()) {
+    //     await axios.get(`${getBaseUrl()}/resources/refresh`);
+    //     setRefreshLinks();
+    //   }
+    // };
+    // refresh();
   }, []);
   const Resource = resourceMap[category];
 

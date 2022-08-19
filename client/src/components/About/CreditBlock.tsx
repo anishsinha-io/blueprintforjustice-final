@@ -37,7 +37,7 @@ const CreditBlock: React.FC<{
         <p className="about-name">{name}</p>
         <Arrow
           className={`accordion-toggle ${
-            showDetails && "flipped"
+            showDetails || "flipped"
           } credit-block-arrow`}
           onClick={() => setShowDetails(() => !showDetails)}
         />

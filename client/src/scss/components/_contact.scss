@@ -71,6 +71,10 @@
 
 .form-heading {
   font-size: 1.25rem;
+  & > h2 {
+    font-family: "korolev";
+    text-transform: uppercase;
+  }
 }
 
 .contact-submit {

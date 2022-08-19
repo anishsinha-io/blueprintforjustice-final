@@ -17,6 +17,7 @@
 
 .app-navbar {
   display: grid;
+  font-family: "korolev";
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   @media screen and (max-width: $medium-screen-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -30,6 +31,7 @@
   &__logo {
     font-size: 1.5rem;
     padding-left: 1rem;
+    text-transform: uppercase;
     @media screen and (max-width: $medium-screen-width) {
       .logo-text {
         display: none;

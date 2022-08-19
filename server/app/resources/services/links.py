@@ -16,7 +16,9 @@
 #
 
 import requests
-from app import get_conn
+import atexit
+from app import get_conn, workdir
+from apscheduler.schedulers.background import BackgroundScheduler
 
 
 # determine validity of a link
@@ -41,6 +43,7 @@ def ping_all():
             if row["valid"] == False:
                 cursor.execute(sql, [True, row["id"]])
                 conn.commit()
+    print("pinged all links")
     return "{msg: successfully refreshed all links}"
 
 
@@ -116,3 +119,11 @@ def get_all_links() -> list[dict]:
         row = dict(row)
         out.append(row)
     return out
+
+
+scheduler = BackgroundScheduler({"apscheduler.timezone": "UTC"})
+scheduler.add_job(func=ping_all, trigger="interval", seconds=60 * 60 * 6)
+scheduler.start()
+
+# Shut down the scheduler when exiting the app
+atexit.register(lambda: scheduler.shutdown())

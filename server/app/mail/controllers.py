@@ -36,8 +36,8 @@ def register_contact():
 # @route <protocol>:host:<port?>/api/mail/contact | example: http://localhost:8888/api/mail/contact
 # this route sends a request to SendInBlue to send a transactional email to the Blueprint For Justice team
 # this route is rate limited to 1 call per hour to prevent abuse
-@limiter.limit("1 per hour")
 @module.route("/contact", methods=["POST"])
+@limiter.limit("1 per hour")
 def new_contact():
     first_name = request.form["first_name"]
     last_name = request.form["last_name"]

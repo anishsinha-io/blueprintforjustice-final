@@ -28,13 +28,16 @@
 .block-container {
   h1 {
     font-size: 1.75rem;
-    text-decoration: underline;
+    font-family: "korolev";
   }
   padding-bottom: 1rem;
 }
 
 .resource-block {
   padding-bottom: 1rem;
+  &__link {
+    font-family: "korolev";
+  }
   &__link,
   &__description {
     font-size: 1.5rem;
@@ -45,6 +48,8 @@
   font-size: 2rem;
   margin: 0 auto;
   text-decoration: underline;
+  font-family: "korolev";
+  text-transform: uppercase;
 }
 
 .resource-wrapper {
@@ -84,6 +89,8 @@
     font-size: 1.65rem;
     text-decoration: underline;
     text-align: center;
+    font-family: "korolev";
+    text-transform: uppercase;
   }
 }
 
@@ -91,9 +98,11 @@
   grid-template-columns: 1fr;
   gap: 1rem;
   &__subheading {
+    font-family: "korolev";
     font-size: 1.75rem;
     color: $rose;
     &--dark {
+      font-family: "korolev";
       font-size: 1.75rem;
       color: $green;
       margin-bottom: 1rem;

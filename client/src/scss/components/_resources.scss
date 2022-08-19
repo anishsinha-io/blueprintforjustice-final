@@ -31,6 +31,10 @@
   @media screen and (max-width: $small-screen-width) {
     text-align: center;
   }
+  & > h2 {
+    font-family: "korolev";
+    text-transform: uppercase;
+  }
 }
 
 .resources-container {
