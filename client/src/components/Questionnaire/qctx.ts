@@ -37,8 +37,10 @@ const QContext = React.createContext<QContextProps>({
   healing: 0,
 });
 
-const getRecommendations = (qctx: QContextProps): string[] => {
-  return [];
+export const getRecommendations = (ctx: any): any => {
+  const vals = [];
+  console.log(Object.entries(ctx));
+  return Object.entries(ctx).sort((el1: any, el2: any) => el2[1] - el1[1]);
 };
 
 export const optionsList: any = [

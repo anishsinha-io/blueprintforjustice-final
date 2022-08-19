@@ -13,10 +13,9 @@ const Stories = () => {
         <div className="stories-title">
           <h1>Stories from the mothers of the movement</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-            quasi earum eaque molestias nam voluptatem iste velit unde, qui sint
-            architecto quo quidem hic, minima veniam repellat eligendi beatae
-            deleniti tempora ipsam?
+            The Black Mother's Film follows the journey of two women working to
+            disrupt the cycle of racist police violence within our country's
+            judicial system.
           </p>
         </div>
       </div>
@@ -53,10 +52,10 @@ const Stories = () => {
         <div className="stories-description">
           <h3>Black Mothers Documentary</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
-            quae, debitis sed quidem beatae, dolore rem unde, velit similique
-            libero recusandae dicta excepturi nemo sint iure blanditiis
-            voluptatibus dolor vitae.
+            Directed by Debora Silva Souza, and David Felix Sutcliffe in 2020,
+            the Black Mother's Film is an incredibly important informational
+            work in the context of police violence and brutality. To learn more,
+            click on the image and follow the link.
           </p>
         </div>
       </div>
