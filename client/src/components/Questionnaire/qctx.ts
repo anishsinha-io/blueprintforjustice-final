@@ -93,17 +93,17 @@ export const optionsList: any = [
     },
   ],
   [
-    "<action question>",
+    "Are you interested in finding resources to cope such as therapy?",
     { text: "Yes", category: "action", points: 2 },
     { text: "No", category: "action", points: 0 },
     {
       text: "I'm not sure",
-      category: "action",
+      category: "healing",
       points: 1,
     },
   ],
   [
-    "<community question>",
+    "Are you interested in meeting others who have gone through similar situations?",
     { text: "Yes", category: "community", points: 2 },
     { text: "No", category: "community", points: 0 },
     {
