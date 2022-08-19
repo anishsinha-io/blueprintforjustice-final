@@ -33,14 +33,7 @@ const Questionnaire = () => {
   const [checked, setChecked] = useState<boolean[]>([false, false, false]);
   const [done, setDone] = useState<boolean>(false);
   const [disabledOthers, setDisabledOthers] = useState<boolean>(false);
-  const [scores, setScores] = useState<{
-    legal: any;
-    healing: any;
-    action: any;
-    community: any;
-    media: any;
-    general: any;
-  }>({
+  const [scores, setScores] = useState<any>({
     legal: 0,
     healing: 0,
     action: 0,
@@ -59,6 +52,7 @@ const Questionnaire = () => {
     setSlide(() => slide + 1);
     setChecked(() => [false, false, false]);
     setDisabledOthers(false);
+    console.log(scores);
   };
   const handlePrev = () => {
     setSlide(() => slide - 1);
@@ -86,18 +80,10 @@ const Questionnaire = () => {
                 setDisabledOthers(true);
                 setScores(() => ({
                   ...scores,
-                  [optionsList[slide][2].category]:
-                    scores[
-                      `${optionsList[slide][2].category}` as
-                        | "legal"
-                        | "healing"
-                        | "media"
-                        | "general"
-                        | "action"
-                        | "community"
-                    ] + optionsList[slide][2].points,
+                  [optionsList[slide][1].category]:
+                    scores[`${optionsList[slide][1].category}`] +
+                    optionsList[slide][1].points,
                 }));
-                console.log(scores);
               }}
             />
             <label htmlFor="option1">
@@ -118,15 +104,8 @@ const Questionnaire = () => {
                 setScores(() => ({
                   ...scores,
                   [optionsList[slide][2].category]:
-                    scores[
-                      `${optionsList[slide][2].category}` as
-                        | "legal"
-                        | "healing"
-                        | "media"
-                        | "general"
-                        | "action"
-                        | "community"
-                    ] + optionsList[slide][2].points,
+                    scores[`${optionsList[slide][2].category}`] +
+                    optionsList[slide][2].points,
                 }));
               }}
             />
@@ -134,7 +113,11 @@ const Questionnaire = () => {
               {optionsList[slide][2].text ?? "--"}
             </label>
           </div>
-          <div className={`option-checkbox ${ctx.darkmode ? "dark" : ""}`}>
+          <div
+            className={`option-checkbox ${ctx.darkmode ? "dark" : ""} ${
+              disabledOthers && "option-checkbox--disabled"
+            }`}
+          >
             <input
               type="checkbox"
               id="option3"
@@ -147,16 +130,9 @@ const Questionnaire = () => {
                 setDisabledOthers(true);
                 setScores(() => ({
                   ...scores,
-                  [optionsList[slide][2].category]:
-                    scores[
-                      `${optionsList[slide][2].category}` as
-                        | "legal"
-                        | "healing"
-                        | "media"
-                        | "general"
-                        | "action"
-                        | "community"
-                    ] + optionsList[slide][2].points,
+                  [optionsList[slide][3].category]:
+                    scores[`${optionsList[slide][3].category}`] +
+                    optionsList[slide][3].points,
                 }));
               }}
             />
