@@ -97,26 +97,26 @@ const HealingResource = () => {
               Stories from Mothers of the Movement
             </div>
             <div className="resource__content">
-              <strong>The Oscar Grant Foundation</strong> emphasizes the need
-              for destigmatizing mental health within the Black community.
-              Through their Healing Hurting Hearts program, the organization
-              hosts monthly support sessions for mothers whose children died
-              from gun violence. The organization also recognizes that while the
-              murder of innocent black men and women impacts the families,
-              trauma from the incident affects the entire community. They
-              approach this issue by focusing on the grieving process.
+              <strong>The Oscar Grant Foundation</strong>, led by Reverend Wanda
+              Johnson, emphasizes the need for destigmatizing mental health
+              within the Black community. Through their Healing Hurting Hearts
+              program, the organization hosts monthly support sessions for
+              mothers whose children died from gun violence. The organization
+              also recognizes that while the murder of innocent black men and
+              women impacts the families, trauma from the incident affects the
+              entire community. They approach this issue by focusing on the
+              grieving process.
               <br />
               <br />
-              <strong>Mothers on a Mission</strong>, founded by Angela Williams,
-              holds space for mothers, and herself, to find support through
-              regular meetings.
+              <strong>Mothers on a Mission</strong>, founded by Angela Williams
+              in Alabama, holds space for mothers, and herself, to find support
+              through regular meetings.
               <br />
               <br />
-              <strong>Stephon's House</strong>:
-              <strong> Stephon's House </strong>
-              family says it's a museum, library, resource and recreation
-              center, but it also has its own therapy room, staffed with a
-              therapist who gets it.
+              <strong>Stephon's House</strong>: Stephon House's family says it's
+              a museum, library, resource and recreation center, but it also has
+              its own therapy room, staffed with a therapist who gets it.
+              Stephon's House is located in Sacramento.
             </div>
           </div>
         </div>

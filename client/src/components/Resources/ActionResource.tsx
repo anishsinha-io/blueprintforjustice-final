@@ -109,7 +109,7 @@ const ActionResource = () => {
               year on March 18th to raise awareness of her son's murder.
               <br />
               <br />
-              <strong>Tamika Palmer</strong>, mother of
+              <strong>Tamika Palmer</strong>, mother of{" "}
               <strong>Breonna Taylor</strong>, worked to bring her daughter's
               death to national attention. Because of the tireless advocacy of
               her mother, Taylor's death attracted global attention and created
@@ -130,7 +130,7 @@ const ActionResource = () => {
               <br />
               <strong>Lezley McSpadden</strong> has since become an author and
               filmmaker in her journey to find justice for her son,
-              <strong>Michael Brown</strong>. She founded The Michael Brown
+              <strong> Michael Brown</strong>. She founded The Michael Brown
               Foundation and campaigned for the Michael Brown Bill.
               <br />
               <br />

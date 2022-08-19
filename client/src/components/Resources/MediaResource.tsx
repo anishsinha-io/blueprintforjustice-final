@@ -80,7 +80,7 @@ const MediaResource = () => {
             <div className="resource__content">
               It becomes more challenging to process and grieve while in the
               public eye. A variety of organizations may be helpful in your
-              journey to change your narrative. Should you find yourself in a
+              journey to change your narrative, should you find yourself in a
               situation where you do not wish to speak to the media, or feel
               ambushed.
             </div>
@@ -113,14 +113,14 @@ const MediaResource = () => {
               <br />
               <br />
               <strong>Geneva Reed-Veal</strong>, mother of
-              <strong>Sandra Bland</strong>, has spoken in many publications
+              <strong> Sandra Bland</strong>, has spoken in many publications
               including the Chicago-Sun Times. She was also part of a group of
               mothers, Mother of the Movement, that spoke at the Democratic
               National Convention in 2016.
               <br />
               <br />
               <strong>Lucy McBath,</strong> mother of
-              <strong>Jordan Davis</strong>, has since become a US
+              <strong> Jordan Davis</strong>, has since become a US
               representative in Congress. She decided to run for office after
               the Stoneman Douglas High School shooting in Parkland, Florida. In
               January of 2019, she took office and has since been an avid

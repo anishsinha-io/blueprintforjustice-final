@@ -113,7 +113,7 @@ const Resources = () => {
           <p>
             We've prepared a list of resources for mothers and family members
             who find themselves in these unimaginable situations. Below, you'll
-            find the tools you'll need to get prepared to talk to the media,
+            find resources that will help you get prepared to talk to the media,
             find legal resources, and organizations on the local and national
             level. You'll also find stories of triumph and strength from the
             Mothers of the Movement.

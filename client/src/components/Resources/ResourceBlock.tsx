@@ -28,6 +28,7 @@ const ResourceBlock: React.FC<{ attrs: LinkAttrs }> = ({ attrs }) => {
         <h4
           className={`link-heading ${ctx.darkmode ? "link-heading-dark" : ""}`}
         >
+          &#9675;{"  "}
           <a href={attrs.href} target="_blank" rel="noreferrer">
             {attrs.text}
           </a>
