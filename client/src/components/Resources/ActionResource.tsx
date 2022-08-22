@@ -59,7 +59,7 @@ const ActionResource = () => {
     });
     jsx = (
       <div className="resource-wrapper">
-        <h1 className="resource-title">Taking Action</h1>
+        <h1 className="resource-title">Resource Links</h1>
         {final}
       </div>
     );

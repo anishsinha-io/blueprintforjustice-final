@@ -59,7 +59,7 @@ const GeneralResource = () => {
     });
     jsx = (
       <div className="resource-wrapper">
-        <h1 className="resource-title">General Resources</h1>
+        <h1 className="resource-title">Resource Links</h1>
         {final}
       </div>
     );

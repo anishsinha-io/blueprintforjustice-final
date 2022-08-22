@@ -59,7 +59,7 @@ const HealingResource = () => {
     });
     jsx = (
       <div className="resource-wrapper">
-        <h1 className="resource-title">Healing and Support</h1>
+        <h1 className="resource-title">Resource Links</h1>
         {final}
       </div>
     );
