@@ -15,31 +15,45 @@
  ** along with this program.  If not, see http://www.gnu.org/licenses/.
  **/
 
+import LucyMcBath from "assets/mothers/LucyMcBath.jpeg";
+import WandaJohnson from "assets/mothers/WandaJohnson.jpeg";
+import GwenCarr from "assets/mothers/GwenCarr.webp";
+import GenevaReedVeal from "assets/mothers/GenevaReedVeal.avif";
+import SybrinaFulton from "assets/mothers/SybrinaFulton.jpeg";
+import AngelaWilliams from "assets/mothers/AngelaWilliams.jpeg";
+
 const founders: any = [
   {
     name: "Lucy McBath",
-    bio: "Lucy McBath is a founder of Blueprint for Justice.",
+    bio: "Lucy McBath is the congresswoman from Georgia's 6th district and the mother of Jordan Davis.",
+    imgSrc: LucyMcBath,
+    url: "https://mcbath.house.gov/",
   },
   {
     name: "Wanda Johnson",
-    bio: "Wanda Johnson is a founder of Blueprint for Justice.",
+    bio: "Wanda Johnson is the CEO of the Oscar Grant Foundation.",
+    imgSrc: WandaJohnson,
   },
   {
     name: "Gwen Carr",
-    bio: "Gwen Carr is a founder of Blueprint for Justice.",
+    bio: "Gwen Carr is a political activist and the mother of Eric Garner.",
+    imgSrc: GwenCarr,
   },
   {
     name: "Geneva Reed-Veal",
-    bio: "Geneva Reed-Veal is a founder of Blueprint for Justice.",
+    bio: "Geneva Reed-Veal is a political activist and mother of Sandra Bland.",
+    imgSrc: GenevaReedVeal,
   },
 
   {
     name: "Sybrina Fulton",
-    bio: "Sybrina Fulton is a founder of Blueprint for Justice.",
+    bio: 'Sybrina Fulton is co-author of "Rest in Power", activist, and mother of Trayvon Martin.',
+    imgSrc: SybrinaFulton,
   },
   {
     name: "Angela Williams",
-    bio: "Angela Williams is a founder of Blueprint for Justice.",
+    bio: 'Angela Williams is an activist and a subject of the documentary "Black Mothers Love & Resist."',
+    imgSrc: AngelaWilliams,
   },
 ];
 export default founders;

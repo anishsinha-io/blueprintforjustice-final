@@ -29,24 +29,28 @@ import SettingsCtx from "components/ctx";
 
 import founders from "components/About/founders";
 
+import LucyMcBath from "assets/mothers/LucyMcBath.jpeg";
+
 const About = () => {
   const ctx = useContext(SettingsCtx);
   const [showWebsiteTeam, setShowWebsiteTeam] = useState<boolean>(false);
   const Arrow = ctx.darkmode ? UpArrowDark : UpArrow;
   const foundersCards = founders.map(
-    (founder: { name: string; bio: string; url?: string; imgSrc?: string }) => {
+    (founder: { name: string; bio: string; url?: string; imgSrc: string }) => {
+      console.log(founder.imgSrc);
       return (
         <Card
           className="about-card"
           key={founder.name}
           title={founder.name}
           label={founder.name}
-          imgSrc={CommunityConnections}
+          imgSrc={founder.imgSrc}
           imgAlt={founder.name}
           icon={MainLogoDark}
           text={founder.bio}
           size="md"
-          link={founder.url}
+          absolute={true}
+          link={founder.url || undefined}
         />
       );
     }

@@ -36,6 +36,7 @@ const Card: React.FC<{
   >;
   size?: "sm" | "md" | "lg";
   text?: string;
+  absolute?: boolean;
 }> = ({
   title,
   label,
@@ -47,9 +48,21 @@ const Card: React.FC<{
   cover: Cover,
   text,
   className,
+  absolute,
 }) => {
   const ctx = useContext(SettingsCtx);
   const [hasOverlay, setHasOverlay] = useState<boolean>(false);
+
+  let linkHtml;
+  if (absolute && link) {
+    linkHtml = (
+      <a href={link} target="_blank" rel="_noreferrer">
+        {title}
+      </a>
+    );
+  } else {
+    linkHtml = <>{link ? <Link to={link}>{label}</Link> : label} </>;
+  }
   return (
     <div
       className={`app-card ${hasOverlay ? "card-overlay" : ""} ${
@@ -94,7 +107,8 @@ const Card: React.FC<{
       >
         <Icon className="label-container__icon" />
         <h4 className={`label-container__label${ctx.darkmode ? "--dark" : ""}`}>
-          {link ? <Link to={link}>{label}</Link> : label}
+          {/* {link ? <Link to={link}>{label}</Link> : label} */}
+          {linkHtml}
         </h4>
       </div>
     </div>
