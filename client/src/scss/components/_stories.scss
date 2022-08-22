@@ -4,6 +4,7 @@
   display: grid;
   width: 90%;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   @media screen and (max-width: $medium-screen-width) {
     grid-template-columns: 1fr;
   }

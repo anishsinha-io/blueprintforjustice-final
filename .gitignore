@@ -1,10 +1,18 @@
+# SECRETS (local ssl certs, public-private key pairs for SSH, environment variables)
 *.env
-node_modules
-logs/
-*.sqlite3
 *.env.*
+*.pem
+*.cert
+*.key
+
+# NOT NEEDED (can just regenerate)
+logs/
 __pycache__/
+node_modules
+*.sqlite3
 *.sql
-all-links.csv
+
+# LOCAL (not secret but also not necessary besides locally)
 backups/
 sql/
+all-links.csv

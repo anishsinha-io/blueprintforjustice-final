@@ -24,9 +24,13 @@
   place-items: center;
   position: relative;
   // font-family: "korolev";
+  text-align: center;
   &__text {
     & > h3 {
       font-family: "korolev";
+      font-size: 3rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
   }
   @media screen and (max-width: $medium-screen-width) {
@@ -70,16 +74,29 @@
     font-size: 2rem;
     @media screen and (max-width: $medium-screen-width) {
       font-size: 1.5rem;
+      & > h3 {
+        font-family: "korolev";
+        font-size: 2rem;
+      }
     }
     @media screen and (max-width: $small-screen-width) {
       font-size: 1rem;
+      & > h3 {
+        font-family: "korolev";
+        font-size: 1.5rem;
+      }
     }
 
     &.darkmode {
       color: $light-gray;
     }
     @media screen and (max-width: $mobile-width) {
-      font-size: 0.75rem;
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: $extremely-small-width) {
+      top: -0.5rem;
+      font-size: 0.6rem;
     }
   }
   &__img {

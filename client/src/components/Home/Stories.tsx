@@ -50,12 +50,23 @@ const Stories = () => {
       </div>
       <div className="app-stories__description">
         <div className="stories-description">
-          <h3>Black Mothers Documentary</h3>
+          <h3>Black Mothers Love & Resist</h3>
           <p>
-            Directed by Debora Silva Souza, and David Felix Sutcliffe in 2020,
-            the Black Mother's Film is an incredibly important informational
-            work in the context of police violence and brutality. To learn more,
-            click on the image and follow the link.
+            The Blueprint for Justice was built off the stories and learnings of
+            the mothers of the movement. This feature-length documentary follows
+            the mothers of young Black men victimized by police brutality, as
+            they come together and build a network of community-led support,
+            mutual aid, and healing in this trenchant documentary spanning
+            Oakland's Fruitvale to the American South. Long before George
+            Floyd's murder and the BLM protests in 2020, Oscar Grant's 2009
+            fateful encounter with law enforcement on a BART platform seeded
+            public awareness and cultural consciousness of systemic racism and
+            its discontents. Paying forward lessons learned and advocating
+            against anti-Black violence in memory of her son, Oscar, Wanda
+            Johnson holds space for Angela Williams, whose teen son, Ulysses,
+            survives a police encounter in Troy, Alabama, living to tell his
+            story. Radical empathy fuels this timely exposé. Directed by Débora
+            Souza Silva and produced by David Felix Sutcliffe & Adina Luo.
           </p>
         </div>
       </div>

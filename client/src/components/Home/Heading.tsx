@@ -17,7 +17,7 @@
 
 import { useContext } from "react";
 
-import HeadingImage from "assets/heading-image.png";
+import HeadingImage from "assets/blackmothersloveandresist.png";
 
 import SettingsCtx from "components/ctx";
 

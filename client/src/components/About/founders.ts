@@ -24,16 +24,21 @@ import AngelaWilliams from "assets/mothers/AngelaWilliams.jpeg";
 
 const founders: any = [
   {
-    name: "Lucy McBath",
-    bio: "Lucy McBath is the congresswoman from Georgia's 6th district and the mother of Jordan Davis.",
-    imgSrc: LucyMcBath,
-    url: "https://mcbath.house.gov/",
-  },
-  {
     name: "Wanda Johnson",
     bio: "Wanda Johnson is the CEO of the Oscar Grant Foundation.",
     imgSrc: WandaJohnson,
     url: "https://oscargrantfoundation.org/book-wanda/",
+  },
+  {
+    name: "Angela Williams",
+    bio: 'Angela Williams is an activist and a subject of the documentary "Black Mothers Love & Resist."',
+    imgSrc: AngelaWilliams,
+  },
+  {
+    name: "Lucy McBath",
+    bio: "Lucy McBath is the congresswoman from Georgia's 6th district and the mother of Jordan Davis.",
+    imgSrc: LucyMcBath,
+    url: "https://mcbath.house.gov/",
   },
   {
     name: "Gwen Carr",
@@ -52,11 +57,6 @@ const founders: any = [
     bio: 'Sybrina Fulton is co-author of "Rest in Power", activist, and mother of Trayvon Martin.',
     imgSrc: SybrinaFulton,
     url: "https://www.apbspeakers.com/speaker/sybrina-fulton/",
-  },
-  {
-    name: "Angela Williams",
-    bio: 'Angela Williams is an activist and a subject of the documentary "Black Mothers Love & Resist."',
-    imgSrc: AngelaWilliams,
   },
 ];
 export default founders;

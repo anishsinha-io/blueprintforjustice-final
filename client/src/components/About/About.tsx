@@ -62,13 +62,17 @@ const About = () => {
           <h1 className="about-title">About Us</h1>
           This project was developed to allow those that have experienced this
           hardship to find the assistance they need, as well as those that hope
-          to get involved. as a part of the Black Mothers Film. We set out with
-          the task to compile the best resources for ease of access. The film
-          "Black Mothers Love & Resist", linked in the "Documentary" section in
-          the footer as well as in the homepage, followed the mothers of the
-          movement over five years and kept track of the challenges they faced
-          and strategies they adapted, and this platform is inspired by the{" "}
-          <em>blueprint for justice</em> they helped to shape.
+          to get involved. We set out with the task to compile the best
+          resources for ease of access. As a part of the documentary "Black
+          Mothers Love & Resist", this website aims to a be a resource to combat
+          senseless police brutality plaguing our country. The documentary is
+          linked in the "Documentary" section in the footer as well as in the
+          homepage, followed the mothers of the movement over five years and
+          kept track of the challenges they faced and strategies they adapted,
+          and this platform is inspired by the <em>
+            blueprint for justice
+          </em>{" "}
+          they helped to shape.
         </div>
         <div className="app-about__mission">
           <h1 className="about-mission">Mission and Statement</h1>
@@ -91,7 +95,7 @@ const About = () => {
         <div className="about--cards">{foundersCards}</div>
       </div>
       <div className="show-more">
-        <h3 className="show-more__text">Creative Team</h3>
+        <h3 className="show-more__text">Tech Team</h3>
         <Arrow
           onClick={() => setShowWebsiteTeam(() => !showWebsiteTeam)}
           className={`show-more__icon show-more__icon${

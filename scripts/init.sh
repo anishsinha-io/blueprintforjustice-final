@@ -24,8 +24,8 @@ timestamp() {
 
 # update packages
 sudo apt update
-echo "\n$(timestamp): STARTING INITIALIZATION"
-echo "$(timestamp): EXPORTING NVM VERSION"
+echo "\n$(timestamp): STARTING INITIALIZATION" > /home/ubuntu/logs/initlog.txt
+echo "$(timestamp): EXPORTING NVM VERSION" > /home/ubuntu/logs/initlog.txt
 # make sure nvm exists
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

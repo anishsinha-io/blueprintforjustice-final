@@ -54,7 +54,7 @@
 .about--cards {
   display: grid;
   margin: 0 auto;
-
+  font-size: 0.9rem;
   grid-template-columns: 1fr 1fr 1fr;
   @media screen and (max-width: $medium-screen-width) {
     grid-template-columns: 1fr 1fr;
