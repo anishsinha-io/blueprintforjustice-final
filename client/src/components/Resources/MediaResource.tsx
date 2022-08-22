@@ -115,7 +115,7 @@ const MediaResource = () => {
               <strong>Geneva Reed-Veal</strong>, mother of
               <strong> Sandra Bland</strong>, has spoken in many publications
               including the Chicago-Sun Times. She was also part of a group of
-              mothers, Mother of the Movement, that spoke at the Democratic
+              mothers, Mothers of the Movement, that spoke at the Democratic
               National Convention in 2016.
               <br />
               <br />

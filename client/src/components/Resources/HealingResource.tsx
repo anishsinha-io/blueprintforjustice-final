@@ -97,15 +97,25 @@ const HealingResource = () => {
               Stories from Mothers of the Movement
             </div>
             <div className="resource__content">
-              <strong>The Oscar Grant Foundation</strong>, led by Reverend Wanda
-              Johnson, emphasizes the need for destigmatizing mental health
-              within the Black community. Through their Healing Hurting Hearts
-              program, the organization hosts monthly support sessions for
-              mothers whose children died from gun violence. The organization
-              also recognizes that while the murder of innocent black men and
-              women impacts the families, trauma from the incident affects the
-              entire community. They approach this issue by focusing on the
-              grieving process.
+              <strong>
+                The{" "}
+                <a
+                  href="https://oscargrantfoundation.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`inline-link${ctx.darkmode ? "-dark" : ""}`}
+                >
+                  Oscar Grant Foundation
+                </a>
+              </strong>
+              , led by Reverend Wanda Johnson, emphasizes the need for
+              destigmatizing mental health within the Black community. Through
+              their Healing Hurting Hearts program, the organization hosts
+              monthly support sessions for mothers whose children died from gun
+              violence. The organization also recognizes that while the murder
+              of innocent black men and women impacts the families, trauma from
+              the incident affects the entire community. They approach this
+              issue by focusing on the grieving process.
               <br />
               <br />
               <strong>Mothers on a Mission</strong>, founded by Angela Williams

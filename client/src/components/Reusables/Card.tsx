@@ -56,7 +56,7 @@ const Card: React.FC<{
   let linkHtml;
   if (absolute && link) {
     linkHtml = (
-      <a href={link} target="_blank" rel="_noreferrer">
+      <a href={link} target="_blank" rel="noreferrer">
         {title}
       </a>
     );

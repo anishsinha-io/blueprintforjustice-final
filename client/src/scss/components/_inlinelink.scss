@@ -20,7 +20,7 @@
   &:hover {
     color: $green;
   }
-  transition: all 1s ease-in;
+  transition: all 0.25s ease-in;
 }
 
 .inline-link-dark {
@@ -28,5 +28,5 @@
   &:hover {
     color: $pink;
   }
-  transition: all 1s ease-in;
+  transition: all 0.25s ease-in;
 }

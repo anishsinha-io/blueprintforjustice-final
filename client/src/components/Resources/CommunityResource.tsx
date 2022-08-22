@@ -93,9 +93,17 @@ const CommunityResource = () => {
               Wanda Johnson & The Oscar Grant Foundation
             </div>
             <div className="resource__content">
-              Wanda Johnson is the Chair & President of the Oscar Grant
-              Foundation. The Oscar Grant Foundation was established to mend the
-              distrust between residents in predominantly Black communities with
+              Wanda Johnson is the Chair & President of the{" "}
+              <a
+                href="https://oscargrantfoundation.org/"
+                target="_blank"
+                rel="noreferrer"
+                className={`inline-link${ctx.darkmode ? "-dark" : ""}`}
+              >
+                Oscar Grant Foundation
+              </a>
+              . The Oscar Grant Foundation was established to mend the distrust
+              between residents in predominantly Black communities with
               high-crime rates and law enforcement. The program helps youth from
               the East Bay area build self-esteem and encourage them and the
               police to find creative ways to perceive themselves and others as
@@ -120,14 +128,22 @@ const CommunityResource = () => {
               Marion Gray-Hopkins and the Coalition of Concerned Mothers
             </div>
             <div className="resource__content">
-              In 2015, Marion Gray-Hopkins co-founded Coalition of Concerned
-              Mothers (COCM), a grassroots organization that brings mothers from
-              around the nation together to support the movement against police
-              terrorism and brutality. Mothers across the U.S. reach out to COCM
-              for support or resources as they transition to a new, normal way
-              of life. COCM stands in solidarity with mothers during their
-              journey for justice. The organization also supports grieving
-              mothers through legal and legislative processes.
+              In 2015, Marion Gray-Hopkins co-founded the{" "}
+              <a
+                href="http://www.cocmdmv.org/"
+                target="_blank"
+                rel="noreferrer"
+                className={`inline-link${ctx.darkmode ? "-dark" : ""}`}
+              >
+                Coalition of Concerned Mothers (COCM)
+              </a>
+              , a grassroots organization that brings mothers from around the
+              nation together to support the movement against police terrorism
+              and brutality. Mothers across the U.S. reach out to COCM for
+              support or resources as they transition to a new, normal way of
+              life. COCM stands in solidarity with mothers during their journey
+              for justice. The organization also supports grieving mothers
+              through legal and legislative processes.
             </div>
           </div>
         </div>
