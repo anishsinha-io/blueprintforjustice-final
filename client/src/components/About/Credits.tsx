@@ -38,15 +38,15 @@ const Credits = () => {
       />
       <CreditBlock
         name="Alyssa Guo"
-        href="https://www.alyssa.me/"
+        href="https://www.alyssaguo.me/"
         title="UX Designer and Content Writer"
-        email="hello@alyssa.me"
+        email="hello@alyssaguo.me"
       />
 
       <CreditBlock
         name="Sai Ravi"
         title="UX Designer"
-        email="anishsinha0128@gmail.com"
+        email="saishreyaravi@gmail.com"
       />
     </div>
   );

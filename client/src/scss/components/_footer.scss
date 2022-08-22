@@ -226,6 +226,7 @@
   position: absolute;
   top: 5rem;
   @media screen and (max-width: $mobile-width) {
+    max-width: 100%;
     top: 8rem;
   }
 }
