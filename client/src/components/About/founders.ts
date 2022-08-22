@@ -33,11 +33,13 @@ const founders: any = [
     name: "Wanda Johnson",
     bio: "Wanda Johnson is the CEO of the Oscar Grant Foundation.",
     imgSrc: WandaJohnson,
+    url: "https://oscargrantfoundation.org/book-wanda/",
   },
   {
     name: "Gwen Carr",
     bio: "Gwen Carr is a political activist and the mother of Eric Garner.",
     imgSrc: GwenCarr,
+    url: "https://www.apbspeakers.com/speaker/gwen-carr/",
   },
   {
     name: "Geneva Reed-Veal",
@@ -49,6 +51,7 @@ const founders: any = [
     name: "Sybrina Fulton",
     bio: 'Sybrina Fulton is co-author of "Rest in Power", activist, and mother of Trayvon Martin.',
     imgSrc: SybrinaFulton,
+    url: "https://www.apbspeakers.com/speaker/sybrina-fulton/",
   },
   {
     name: "Angela Williams",

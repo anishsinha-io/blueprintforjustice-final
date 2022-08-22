@@ -50,7 +50,7 @@ const About = () => {
           text={founder.bio}
           size="md"
           absolute={true}
-          link={founder.url || undefined}
+          link={founder.url}
         />
       );
     }
@@ -63,19 +63,28 @@ const About = () => {
           This project was developed to allow those that have experienced this
           hardship to find the assistance they need, as well as those that hope
           to get involved. as a part of the Black Mothers Film. We set out with
-          the task to compile the best resources for ease of access.
+          the task to compile the best resources for ease of access. The film
+          "Black Mothers Love & Resist", linked in the "Documentary" section in
+          the footer as well as in the homepage, followed the mothers of the
+          movement over five years and kept track of the challenges they faced
+          and strategies they adapted, and this platform is inspired by the{" "}
+          <em>blueprint for justice</em> they helped to shape.
         </div>
         <div className="app-about__mission">
           <h1 className="about-mission">Mission and Statement</h1>
           This project was developed to allow those that have experienced this
           hardship to find the assistance they need, as well as those that hope
-          to get involved.. We set out with the task to compile the best
-          resources for ease of access.
+          to get involved. We set out with the task to compile the best
+          resources for ease of access. This platform is built in the hope that
+          it will be a useful tool to combat racist police brutality and its
+          broader repercussions on both the families and the communities it
+          harms.
         </div>
         <div className="app-about__team">
           <h1 className="about-team">Featured Mothers</h1>
-          Comprised of professionals versed in all facets of UX - we share a
-          sense of community, united in a desire to give back.
+          Comprised of professionals versed in all facets of activism and UX, we
+          share a sense of community &#8212;united in a desire to give back and
+          prevent the harm that police violence causes.
         </div>
       </div>
       <div className="about-body">

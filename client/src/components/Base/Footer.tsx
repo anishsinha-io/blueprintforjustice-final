@@ -54,21 +54,21 @@ const Footer = () => {
             <h1>Blueprint for Justice</h1>
             <div className="title-icons">
               <a
-                href="https://blackmothersfilm.com/"
+                href="https://www.facebook.com/BlackMothersfilm/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FacebookIcon className="flex-icon" />
               </a>
               <a
-                href="https://blackmothersfilm.com/"
+                href="https://twitter.com/blackmothersmov"
                 target="_blank"
                 rel="noreferrer"
               >
                 <TwitterIcon className="flex-icon" />
               </a>
               <a
-                href="https://blackmothersfilm.com/"
+                href="https://www.instagram.com/blackmothersfilm/?hl=en"
                 target="_blank"
                 rel="noreferrer"
               >
