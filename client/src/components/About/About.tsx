@@ -51,6 +51,7 @@ const About = () => {
           size="md"
           absolute={true}
           link={founder.url}
+          ext={true}
         />
       );
     }

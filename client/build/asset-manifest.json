@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.cdc81e96.css",
-    "main.js": "/static/js/main.45369921.js",
+    "main.css": "/static/css/main.b2cd2a9b.css",
+    "main.js": "/static/js/main.86131eac.js",
     "static/media/taking-action.png": "/static/media/taking-action.21b8897f01a6863b43ed.png",
     "static/media/community-connections.png": "/static/media/community-connections.6fe15bb24195624f8705.png",
     "static/media/general-resources.png": "/static/media/general-resources.f883f04910670d1cad51.png",
-    "static/media/GwenCarr.webp": "/static/media/GwenCarr.9165d9832af747941768.webp",
+    "static/media/new-taking-action.png": "/static/media/new-taking-action.f2b144bd8e29d66487aa.png",
+    "static/media/GenevaReedVeal.png": "/static/media/GenevaReedVeal.13fc09db817f06a1b4a6.png",
+    "static/media/new-community-connections.png": "/static/media/new-community-connections.65d7d502d4e024d4e7a8.png",
+    "static/media/new-general-resources.png": "/static/media/new-general-resources.7286c228a34c5a34bc4c.png",
+    "static/media/new-legal-aid.png": "/static/media/new-legal-aid.93b09e5896d0eb8b1ad2.png",
+    "static/media/SybrinaFulton.png": "/static/media/SybrinaFulton.d7c607cee41bc5a6a486.png",
+    "static/media/new-poster.png": "/static/media/new-poster.d10fa154b8a8c58cb176.png",
     "static/media/legal-aid.png": "/static/media/legal-aid.073565e451e2c6be9af4.png",
-    "static/media/george-floyd-img-asset.png": "/static/media/george-floyd-img-asset.c99f8fd98dc187dadbbb.png",
-    "static/media/AngelaWilliams.jpeg": "/static/media/AngelaWilliams.771171565f85e29b8224.jpeg",
+    "static/media/media-preparedness.png": "/static/media/media-preparedness.aacc408a5574605255de.png",
+    "static/media/healing-and-support.png": "/static/media/healing-and-support.6fa6d8ab0ebcde1962d9.png",
+    "static/media/AngelaWilliams.png": "/static/media/AngelaWilliams.687a651d5ff6cc9045a4.png",
+    "static/media/new-media-preparedness.png": "/static/media/new-media-preparedness.9f8d7f43206ae56a3ae6.png",
+    "static/media/GwenCarr.jpeg": "/static/media/GwenCarr.e771fe3972b25cd6337f.jpeg",
     "static/media/blackmothersloveandresist.png": "/static/media/blackmothersloveandresist.0537fc5ac5e2d4e5a2c7.png",
-    "static/media/WandaJohnson.jpeg": "/static/media/WandaJohnson.ce6c9d8d0a4210ee9dab.jpeg",
+    "static/media/WandaJohnson.jpeg": "/static/media/WandaJohnson.c42d00202cce903b61d8.jpeg",
     "static/media/LucyMcBath.jpeg": "/static/media/LucyMcBath.f7db5dad946b91428506.jpeg",
-    "static/media/GenevaReedVeal.avif": "/static/media/GenevaReedVeal.513805d5308eb10424bb.avif",
-    "static/media/SybrinaFulton.jpeg": "/static/media/SybrinaFulton.6515c01542efaa42a9d0.jpeg",
-    "static/media/breonna-taylor-img-asset.jpeg": "/static/media/breonna-taylor-img-asset.623daec19e22ab682fce.jpeg",
     "static/media/healing.svg": "/static/media/healing.c9beaa520b48fe7d4215d0e88c84e0c0.svg",
     "static/media/legal.svg": "/static/media/legal.47c5fb4d1d3420968f9f72df55e09b11.svg",
     "static/media/media.svg": "/static/media/media.5f56c8475103190bab2d498e5487bbe8.svg",
@@ -36,11 +42,11 @@
     "static/media/x-icon.svg": "/static/media/x-icon.d6020f1216a6dc6f27061dd4fd6af32a.svg",
     "static/media/menu-icon-dark.svg": "/static/media/menu-icon-dark.7b6c61cf06d51dc0be30033b25a55543.svg",
     "static/media/menu-icon.svg": "/static/media/menu-icon.423c7f060b7e84a724670a7b9e946403.svg",
-    "main.cdc81e96.css.map": "/static/css/main.cdc81e96.css.map",
-    "main.45369921.js.map": "/static/js/main.45369921.js.map"
+    "main.b2cd2a9b.css.map": "/static/css/main.b2cd2a9b.css.map",
+    "main.86131eac.js.map": "/static/js/main.86131eac.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdc81e96.css",
-    "static/js/main.45369921.js"
+    "static/css/main.b2cd2a9b.css",
+    "static/js/main.86131eac.js"
   ]
 }

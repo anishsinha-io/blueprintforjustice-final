@@ -33,6 +33,7 @@ const founders: any = [
     name: "Angela Williams",
     bio: 'Angela Williams is an activist and a subject of the documentary "Black Mothers Love & Resist."',
     imgSrc: AngelaWilliams,
+    url: "https://www.blackmothersfilm.com/",
   },
   {
     name: "Lucy McBath",
@@ -50,6 +51,7 @@ const founders: any = [
     name: "Geneva Reed-Veal",
     bio: "Geneva Reed-Veal is a political activist, public speaker, and mother of Sandra Bland.",
     imgSrc: GenevaReedVeal,
+    url: "https://www.blackmothersfilm.com/",
   },
 
   {

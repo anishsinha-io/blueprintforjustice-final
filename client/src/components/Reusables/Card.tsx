@@ -38,6 +38,7 @@ const Card: React.FC<{
   size?: "sm" | "md" | "lg";
   text?: string;
   absolute?: boolean;
+  ext?: boolean;
 }> = ({
   title,
   label,
@@ -50,6 +51,7 @@ const Card: React.FC<{
   text,
   className,
   absolute,
+  ext,
 }) => {
   const ctx = useContext(SettingsCtx);
   const navigate = useNavigate();
@@ -58,12 +60,32 @@ const Card: React.FC<{
   let linkHtml;
   if (absolute && link) {
     linkHtml = (
-      <a href={link} target="_blank" rel="noreferrer">
+      <a
+        href={link}
+        target={ext ? "_blank" : "_self"}
+        rel={ext ? "noreferrer" : ""}
+      >
         {title}
       </a>
     );
+  } else if (absolute && !link) {
+    linkHtml = <div>{label}</div>;
   } else {
-    linkHtml = <>{link ? <Link to={link}>{label}</Link> : label} </>;
+    linkHtml = (
+      <>
+        {link ? (
+          <a
+            href={link}
+            target={ext ? "_blank" : "_self"}
+            rel={ext ? "noreferrer" : ""}
+          >
+            {title}
+          </a>
+        ) : (
+          label
+        )}{" "}
+      </>
+    );
   }
   return (
     <div
@@ -72,7 +94,7 @@ const Card: React.FC<{
       } ${className}`}
       onMouseEnter={() => setHasOverlay(() => true)}
       onMouseLeave={() => setHasOverlay(() => false)}
-      onClick={() => navigate(`${link}`)}
+      onClick={ext ? () => window.open(link, "_blank") : () => navigate(link!)}
     >
       <img
         src={imgSrc}
