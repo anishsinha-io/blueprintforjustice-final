@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Poster from "assets/poster.png";
+import Poster from "assets/new-poster.png";
 
 import { ReactComponent as PlayButton } from "assets/svg/play-button.svg";
 import { ReactComponent as PlayButtonDark } from "assets/svg/play-button-dark.svg";
