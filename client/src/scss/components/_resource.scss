@@ -26,9 +26,11 @@
 }
 
 .block-container {
-  h1 {
+  h3 {
     font-size: 1.75rem;
     font-family: "korolev";
+    text-transform: uppercase;
+    font-style: italic;
   }
   padding-bottom: 1rem;
 }
@@ -37,10 +39,11 @@
   padding-bottom: 1rem;
   &__link {
     font-family: "korolev";
+    text-transform: uppercase;
+    font-size: 1.3rem;
   }
-  &__link,
   &__description {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -65,7 +68,7 @@
   color: $rose;
   &:hover {
     color: $green;
-    font-size: 1.525rem;
+    font-size: 1.325rem;
   }
 }
 
@@ -74,7 +77,7 @@
   color: $green;
   &:hover {
     color: $rose;
-    font-size: 1.525rem;
+    font-size: 1.325rem;
   }
 }
 
@@ -86,7 +89,7 @@
   margin-bottom: 1rem;
   justify-items: center;
   &__name {
-    font-size: 1.65rem;
+    font-size: 2rem;
     text-decoration: underline;
     text-align: center;
     font-family: "korolev";
@@ -99,10 +102,12 @@
   gap: 1rem;
   &__subheading {
     font-family: "korolev";
+    text-transform: uppercase;
     font-size: 1.75rem;
     color: $rose;
     &--dark {
       font-family: "korolev";
+      text-transform: uppercase;
       font-size: 1.75rem;
       color: $green;
       margin-bottom: 1rem;
@@ -111,5 +116,6 @@
   }
   &__content {
     margin-bottom: 2rem;
+    font-size: 1.3rem;
   }
 }

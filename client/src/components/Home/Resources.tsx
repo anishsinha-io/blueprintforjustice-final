@@ -108,7 +108,7 @@ const Resources = () => {
     <>
       <section className="app-resources">
         <div className="resources-description">
-          <h2>Resources</h2>
+          <h3 className="resources-description__header">Resources</h3>
           <p>
             We've prepared a list of resources for mothers and family members
             who find themselves in these unimaginable situations. Below, you'll

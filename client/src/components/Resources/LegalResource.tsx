@@ -53,7 +53,8 @@ const Law101Resource = () => {
       });
       return (
         <div key={k} className="block-container">
-          <h1>{k}</h1> {items}
+          <h3>{k}</h3> {items}
+          <hr />
         </div>
       );
     });
@@ -69,7 +70,7 @@ const Law101Resource = () => {
     <div className="app-resource">
       <div className="resource-header">
         <div className="resource-header__name">
-          <h1>Legal Aid</h1>
+          <h3>Legal Aid</h3>
         </div>
         <div className="resource-header__body">
           <div className="resource">

@@ -75,7 +75,7 @@ const About = () => {
           they helped to shape.
         </div>
         <div className="app-about__mission">
-          <h1 className="about-mission">Mission and Statement</h1>
+          <h1 className="about-mission">Our Mission</h1>
           This project was developed to allow those that have experienced this
           hardship to find the assistance they need, as well as those that hope
           to get involved. We set out with the task to compile the best

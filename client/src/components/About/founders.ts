@@ -17,15 +17,15 @@
 
 import LucyMcBath from "assets/mothers/LucyMcBath.jpeg";
 import WandaJohnson from "assets/mothers/WandaJohnson.jpeg";
-import GwenCarr from "assets/mothers/GwenCarr.webp";
-import GenevaReedVeal from "assets/mothers/GenevaReedVeal.avif";
-import SybrinaFulton from "assets/mothers/SybrinaFulton.jpeg";
-import AngelaWilliams from "assets/mothers/AngelaWilliams.jpeg";
+import GwenCarr from "assets/mothers/GwenCarr.jpeg";
+import GenevaReedVeal from "assets/mothers/GenevaReedVeal.png";
+import SybrinaFulton from "assets/mothers/SybrinaFulton.png";
+import AngelaWilliams from "assets/mothers/AngelaWilliams.png";
 
 const founders: any = [
   {
     name: "Wanda Johnson",
-    bio: "Wanda Johnson is the CEO of the Oscar Grant Foundation.",
+    bio: "Wanda Johnson is the CEO of the Oscar Grant Foundation as well as a motivational speaker and activist.",
     imgSrc: WandaJohnson,
     url: "https://oscargrantfoundation.org/book-wanda/",
   },
@@ -42,13 +42,13 @@ const founders: any = [
   },
   {
     name: "Gwen Carr",
-    bio: "Gwen Carr is a political activist and the mother of Eric Garner.",
+    bio: "Gwen Carr is a political activist, author, public speaker, and the mother of Eric Garner.",
     imgSrc: GwenCarr,
     url: "https://www.apbspeakers.com/speaker/gwen-carr/",
   },
   {
     name: "Geneva Reed-Veal",
-    bio: "Geneva Reed-Veal is a political activist and mother of Sandra Bland.",
+    bio: "Geneva Reed-Veal is a political activist, public speaker, and mother of Sandra Bland.",
     imgSrc: GenevaReedVeal,
   },
 

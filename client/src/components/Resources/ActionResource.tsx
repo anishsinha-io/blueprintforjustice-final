@@ -53,7 +53,8 @@ const ActionResource = () => {
       });
       return (
         <div key={k} className="block-container">
-          <h1>{k}</h1> {items}
+          <h3>{k}</h3> {items}
+          <hr />
         </div>
       );
     });
@@ -69,7 +70,7 @@ const ActionResource = () => {
     <div className="app-resource">
       <div className="resource-header">
         <div className="resource-header__name">
-          <h1>Taking Action</h1>
+          <h3>Taking Action</h3>
         </div>
         <div className="resource-header__body">
           <div className="resource">

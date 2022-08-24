@@ -97,6 +97,10 @@
     @media screen and (max-width: $extremely-small-width) {
       font-size: 0.6rem;
     }
+
+    @media screen and (max-width: 365px) {
+      top: 2rem;
+    }
   }
   &__img {
     margin-left: 2rem;

@@ -23,31 +23,33 @@ const Stories = () => {
         <img
           src={Poster}
           alt="legal aid"
-          className={`stories-img stories-img--overlay`}
+          className={`stories-img`}
           loading="lazy"
         ></img>
-        <a
+        {/* <a
           href="https://www.blackmothersfilm.com/"
           target="_blank"
           rel="noreferrer"
-          className={!overlay ? "film-link" : "film-link--hidden"}
+          className={`film-link`}
           onMouseOver={() => setOverlay(() => true)}
           onMouseLeave={() => setOverlay(() => false)}
         >
           <PlayButtonDark />
-        </a>
-        <a
+        </a> */}
+        {/* <a
           href="https://www.blackmothersfilm.com/"
           target="_blank"
           rel="noreferrer"
           className="film-link"
         >
           <PlayButton />
-        </a>
+        </a> */}
       </div>
       <div className="app-stories__description">
         <div className="stories-description">
-          <h3>Black Mothers Love & Resist</h3>
+          <h3 className="stories-description__header">
+            Black Mothers Love & Resist
+          </h3>
           <p>
             The Blueprint for Justice was built off the stories and learnings of
             the mothers of the movement. This feature-length documentary follows

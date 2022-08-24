@@ -54,7 +54,8 @@ const CommunityResource = () => {
       });
       return (
         <div key={k} className="block-container">
-          <h1>{k}</h1> {items}
+          <h3>{k}</h3> {items}
+          <hr />
         </div>
       );
     });
@@ -70,7 +71,7 @@ const CommunityResource = () => {
     <div className="app-resource">
       <div className="resource-header">
         <div className="resource-header__name">
-          <h1>Community Connections</h1>
+          <h3>Community Connections</h3>
         </div>
         <div className="resource-header__body">
           <div className="resource">

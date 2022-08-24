@@ -27,13 +27,14 @@
 .resources-description {
   width: 90%;
   padding: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   @media screen and (max-width: $small-screen-width) {
     text-align: center;
   }
-  & > h2 {
+  &__header {
     font-family: "korolev";
     text-transform: uppercase;
+    font-size: 2rem;
   }
 }
 
