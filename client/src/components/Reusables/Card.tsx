@@ -16,9 +16,10 @@
  **/
 
 import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import SettingsCtx from "components/ctx";
+import getBaseUrl from "config";
 
 // default card size is "lg"
 const Card: React.FC<{
@@ -51,6 +52,7 @@ const Card: React.FC<{
   absolute,
 }) => {
   const ctx = useContext(SettingsCtx);
+  const navigate = useNavigate();
   const [hasOverlay, setHasOverlay] = useState<boolean>(false);
 
   let linkHtml;
@@ -70,6 +72,7 @@ const Card: React.FC<{
       } ${className}`}
       onMouseEnter={() => setHasOverlay(() => true)}
       onMouseLeave={() => setHasOverlay(() => false)}
+      onClick={() => navigate(`${link}`)}
     >
       <img
         src={imgSrc}

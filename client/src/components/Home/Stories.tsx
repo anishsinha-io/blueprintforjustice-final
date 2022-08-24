@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import GeneralResources from "assets/resource-images/general-resources.png";
+import Poster from "assets/poster.png";
 
 import { ReactComponent as PlayButton } from "assets/svg/play-button.svg";
 import { ReactComponent as PlayButtonDark } from "assets/svg/play-button-dark.svg";
@@ -21,11 +21,10 @@ const Stories = () => {
       </div>
       <div className="app-stories__img">
         <img
-          src={GeneralResources}
+          src={Poster}
           alt="legal aid"
-          className={`stories-img stories-img${overlay ? "--overlay" : ""}`}
-          onMouseOver={() => setOverlay(() => true)}
-          onMouseLeave={() => setOverlay(() => false)}
+          className={`stories-img stories-img--overlay`}
+          loading="lazy"
         ></img>
         <a
           href="https://www.blackmothersfilm.com/"
@@ -41,9 +40,7 @@ const Stories = () => {
           href="https://www.blackmothersfilm.com/"
           target="_blank"
           rel="noreferrer"
-          className={overlay ? "film-link" : "film-link--hidden"}
-          onMouseOver={() => setOverlay(() => true)}
-          onMouseLeave={() => setOverlay(() => false)}
+          className="film-link"
         >
           <PlayButton />
         </a>

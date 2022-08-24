@@ -36,6 +36,7 @@ const Heading = () => {
           className="app-heading__img"
           src={HeadingImage}
           alt="black mothers heading"
+          loading="lazy"
         />
       </section>
     </>

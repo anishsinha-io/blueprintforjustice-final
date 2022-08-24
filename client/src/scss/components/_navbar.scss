@@ -148,19 +148,20 @@
 .navbar-resources {
   z-index: 10000;
   .navbar-resources__options {
+    font-size: 1rem;
     padding: 0.5rem;
     background-color: $dark-gray;
     color: $light-gray;
     border-radius: 0.5rem;
-    font-size: 1.25rem;
 
     div {
+      font-size: 1rem;
       padding-left: 0.25rem;
       padding-right: 0.25rem;
       padding-bottom: 0.25rem;
       transition: all 0.25s ease-in;
       &:hover {
-        font-size: 1.3rem;
+        font-size: 1.08rem;
         color: $rose;
         transition: all 0.25s ease-in;
       }
@@ -178,12 +179,13 @@
     font-size: 1.25rem;
 
     div {
+      font-size: 1rem;
       padding-left: 0.25rem;
       padding-right: 0.25rem;
       padding-bottom: 0.25rem;
       transition: all 0.25s ease-in;
       &:hover {
-        font-size: 1.3rem;
+        font-size: 1.08rem;
         color: $green;
         transition: all 0.25s ease-in;
       }
