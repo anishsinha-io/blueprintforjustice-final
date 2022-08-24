@@ -15,13 +15,12 @@
  ** along with this program.  If not, see http://www.gnu.org/licenses/.
  **/
 
-import BreonnaTaylor from "assets/breonna-taylor-img-asset.jpeg";
-import GeorgeFloyd from "assets/george-floyd-img-asset.png";
-
-import CommunityConnections from "assets/resource-images/community-connections.png";
-import TakingAction from "assets/resource-images/taking-action.png";
-import LegalAid from "assets/resource-images/legal-aid.png";
-import GeneralResources from "assets/resource-images/general-resources.png";
+import CommunityConnections from "assets/resource-images/new-community-connections.png";
+import TakingAction from "assets/resource-images/new-taking-action.png";
+import LegalAid from "assets/resource-images/new-legal-aid.png";
+import GeneralResources from "assets/resource-images/new-general-resources.png";
+import HealingAndSupport from "assets/resource-images/healing-and-support.png";
+import MediaPreparedness from "assets/resource-images/new-media-preparedness.png";
 
 import { ReactComponent as HealingIcon } from "assets/resource-icons/healing.svg";
 import { ReactComponent as CommunityConnectionsIcon } from "assets/resource-icons/community-connections.svg";
@@ -38,7 +37,7 @@ const Resources = () => {
   const cards = [
     {
       label: "Healing and Support",
-      imgSrc: BreonnaTaylor,
+      imgSrc: HealingAndSupport,
       imgAlt: "healing and support card",
       icon: MainLogoDark,
       title: "Healing and Support",
@@ -74,7 +73,7 @@ const Resources = () => {
     },
     {
       label: "Media Preparedness",
-      imgSrc: GeorgeFloyd,
+      imgSrc: MediaPreparedness,
       imgAlt: "media preparedness card",
       icon: MainLogoDark,
       title: "Media Preparedness",

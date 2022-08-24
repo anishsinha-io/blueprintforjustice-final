@@ -28,7 +28,6 @@
   width: 90%;
   padding: 3rem;
   font-size: 1.5rem;
-  font-family: "korolev";
   @media screen and (max-width: $small-screen-width) {
     text-align: center;
   }
@@ -43,6 +42,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   & > div {
     border-radius: 1rem;
+    font-family: "korolev";
+    text-transform: uppercase;
   }
   gap: 4rem;
   place-items: center;

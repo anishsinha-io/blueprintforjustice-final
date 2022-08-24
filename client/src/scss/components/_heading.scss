@@ -58,7 +58,7 @@
     margin: 0 auto;
     z-index: 200;
     position: absolute;
-    top: 15%;
+    top: 35%;
     left: 10%;
     width: 80%;
     display: flex;
@@ -95,7 +95,6 @@
     }
 
     @media screen and (max-width: $extremely-small-width) {
-      top: -0.5rem;
       font-size: 0.6rem;
     }
   }
