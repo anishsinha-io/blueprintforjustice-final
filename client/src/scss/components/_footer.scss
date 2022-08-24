@@ -96,6 +96,9 @@
     height: 4rem;
     font-family: "korolev";
     text-transform: uppercase;
+    @media screen and (max-width: 325px) {
+      margin-bottom: 5rem;
+    }
   }
 }
 
