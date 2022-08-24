@@ -102,9 +102,7 @@ def get_space_links(space: str) -> dict:
         del row["valid"]
         if row_valid:
             out[row_category].append(row)
-    for k, d in out.items():
-        if len(d) == 0:
-            del k
+    out = {k: v for k, v in out.items() if len(v) > 0}
     return out
 
 

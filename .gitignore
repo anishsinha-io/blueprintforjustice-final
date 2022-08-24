@@ -13,6 +13,7 @@ node_modules
 *.sql
 
 # LOCAL (not secret but also not necessary besides locally)
+scratch/
 backups/
 sql/
 all-links.csv

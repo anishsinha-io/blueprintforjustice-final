@@ -15,13 +15,14 @@
  ** along with this program.  If not, see http://www.gnu.org/licenses/.
  **/
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 
 import Button from "components/Reusables/Button";
 import getBaseUrl from "config";
 
 import { ReactComponent as XIcon } from "assets/svg/x-icon.svg";
+import SettingsCtx from "components/ctx";
 
 interface ContactData {
   firstName: string;
@@ -44,6 +45,7 @@ const validateInputs = (data: ContactData) => {
 };
 
 const Contact = () => {
+  const ctx = useContext(SettingsCtx);
   useEffect(() => window.scrollTo(0, 0), []);
   const [data, setData] = useState<ContactData>({
     firstName: "",
@@ -73,7 +75,7 @@ const Contact = () => {
             <div>{alert.msg}</div>
             <XIcon
               className="alert-contact__exit"
-              onClick={() => setAlert((current) => ({ show: false, msg: "" }))}
+              onClick={() => setAlert(() => ({ show: false, msg: "" }))}
             />
           </div>
         )}
@@ -86,7 +88,9 @@ const Contact = () => {
             action.
           </p>
         </div>
-        <fieldset className="contact-inputs">
+        <fieldset
+          className={`contact-inputs ${ctx.darkmode && "contact-inputs--dark"}`}
+        >
           <legend>
             <h3>Your message</h3>
           </legend>

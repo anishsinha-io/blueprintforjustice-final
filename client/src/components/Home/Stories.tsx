@@ -11,7 +11,7 @@ const Stories = () => {
     <section className="app-stories">
       <div className="app-stories__title">
         <div className="stories-title">
-          <h1>Stories from the mothers of the movement</h1>
+          <h3>Stories from the mothers of the movement</h3>
           <p>
             The Black Mother's Film follows the journey of two women working to
             disrupt the cycle of racist police violence within our country's
@@ -26,24 +26,22 @@ const Stories = () => {
           className={`stories-img`}
           loading="lazy"
         ></img>
-        {/* <a
+        <a
           href="https://www.blackmothersfilm.com/"
           target="_blank"
           rel="noreferrer"
           className={`film-link`}
-          onMouseOver={() => setOverlay(() => true)}
-          onMouseLeave={() => setOverlay(() => false)}
         >
           <PlayButtonDark />
-        </a> */}
-        {/* <a
+        </a>
+        <a
           href="https://www.blackmothersfilm.com/"
           target="_blank"
           rel="noreferrer"
           className="film-link"
         >
           <PlayButton />
-        </a> */}
+        </a>
       </div>
       <div className="app-stories__description">
         <div className="stories-description">
