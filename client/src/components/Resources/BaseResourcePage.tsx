@@ -122,16 +122,20 @@ const BaseResourcePage: React.FC<{ category: string }> = ({ category }) => {
           </li>
         </ul>
       </div>
-      <div className="resource-dropdown">
+      <div
+        className={`resource-dropdown ${
+          ctx.darkmode ? "resource-dropdown--dark" : ""
+        }`}
+      >
         <Dropdown
-          className="resource-dropdown"
+          className={`resource-dropdown`}
           items={[
             { text: "Legal Aid", href: "/legal-aid" },
             { text: "Healing and Support", href: "/healing-and-support" },
             { text: "Community Connections", href: "/community-connections" },
             { text: "Taking Action", href: "/taking-action" },
             { text: "Media Preparedness", href: "/media-preparedness" },
-            { text: "Resources for You", href: "/resources-for-you" },
+            { text: "General Resources", href: "/general" },
           ]}
         >
           <FinalIcon />

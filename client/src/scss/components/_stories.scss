@@ -41,10 +41,7 @@
 .stories-img {
   width: 80%;
   border-radius: 1rem;
-  // filter: grayscale(100);
-  border: 1px solid $dark-gray;
   &--overlay {
-    // filter: brightness(0.5) grayscale(100);
     filter: brightness(0.5);
     cursor: pointer;
     border: 2px solid $white;
