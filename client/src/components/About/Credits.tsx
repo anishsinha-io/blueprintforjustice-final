@@ -28,7 +28,7 @@ const Credits = () => {
       />
       <CreditBlock
         name="Jacqueline Vo"
-        title="Product Manager"
+        title="Product Manager and Content Strategist"
         email="jackieqvo@gmail.com"
       />
       <CreditBlock
