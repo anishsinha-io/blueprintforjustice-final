@@ -22,7 +22,7 @@ const websiteTeam: { title: string; name: string; href?: string }[] = [
     href: "",
   },
   {
-    title: "Product Manager",
+    title: "Product Manager and Content Strategist",
     name: "Jacqueline Vo",
     href: "",
   },
