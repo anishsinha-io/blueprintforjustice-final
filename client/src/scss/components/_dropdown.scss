@@ -19,6 +19,8 @@
   position: relative;
   cursor: pointer;
   width: 100%;
+  font-family: "korolev";
+  text-transform: uppercase;
   &__options {
     position: absolute;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
