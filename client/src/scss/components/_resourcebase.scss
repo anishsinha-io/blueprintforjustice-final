@@ -52,6 +52,8 @@
   li {
     margin-bottom: 1rem;
     transition: all 0.25s ease;
+    font-family: "korolev";
+    text-transform: uppercase;
     &:hover {
       font-size: 1.53rem;
       color: $green;

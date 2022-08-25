@@ -87,9 +87,9 @@ const About = () => {
         </div>
         <div className="app-about__team">
           <h1 className="about-team">Featured Mothers</h1>
-          Comprised of professionals versed in all facets of activism and UX, we
-          share a sense of community &#8212;united in a desire to give back and
-          prevent the harm that police violence causes.
+          Comprised of community leaders and professionals versed in all facets
+          of activism and UX, we share a sense of community &#8212;united in a
+          desire to give back and prevent the harm that police violence causes.
         </div>
       </div>
       <div className="about-body">

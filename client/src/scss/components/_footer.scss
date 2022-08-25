@@ -56,7 +56,7 @@
     }
   }
   &__signup {
-    margin-top: -3rem;
+    margin-top: -5.75rem;
     justify-self: center;
     align-self: center;
     display: flex;
@@ -68,18 +68,21 @@
       text-transform: uppercase;
     }
     @media screen and (max-width: $medium-screen-width) {
-      margin-top: -5rem;
+      margin-top: -8rem;
       justify-self: center;
     }
     @media screen and (max-width: $small-screen-width) {
-      margin-top: -14rem;
+      margin-top: -21.25rem;
       .signup-title {
         margin-top: 0;
       }
     }
     @media screen and (max-width: $mobile-width) {
-      margin-top: -8rem;
+      margin-top: -13.5rem;
       text-align: center;
+    }
+    @media screen and (max-width: 623px) {
+      margin-top: -10.5rem;
     }
     @media screen and (max-width: $small-width) {
       margin: 0 auto;
@@ -95,6 +98,8 @@
   & > h2 {
     height: 4rem;
     font-family: "korolev";
+    margin-bottom: 4rem;
+
     text-transform: uppercase;
     @media screen and (max-width: 325px) {
       margin-bottom: 5rem;
@@ -164,6 +169,7 @@
   font-size: 1rem;
   height: 3rem;
   width: 18rem;
+  font-family: "Merriweather";
   @media screen and (max-width: $mobile-width) {
     height: 2rem;
     width: 10rem;

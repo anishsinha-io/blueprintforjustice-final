@@ -25,13 +25,13 @@ import AngelaWilliams from "assets/mothers/AngelaWilliams.png";
 const founders: any = [
   {
     name: "Wanda Johnson",
-    bio: "Wanda Johnson is the CEO of the Oscar Grant Foundation as well as a motivational speaker and activist.",
+    bio: "Wanda Johnson is the CEO of the Oscar Grant Foundation (named after her son, Oscar Grant III) as well as a speaker and activist.",
     imgSrc: WandaJohnson,
     url: "https://oscargrantfoundation.org/book-wanda/",
   },
   {
     name: "Angela Williams",
-    bio: 'Angela Williams is an activist and a subject of the documentary "Black Mothers Love & Resist."',
+    bio: 'Angela Williams is an activist and a subject of the documentary "Black Mothers Love & Resist." She is the mother of Ulysses Wilkerson.',
     imgSrc: AngelaWilliams,
     url: "https://www.blackmothersfilm.com/",
   },

@@ -56,7 +56,8 @@
       }
     }
     input {
-      font-family: futura;
+      // font-family: futura;
+      font-family: "Merriweather";
       font-size: 1rem;
       height: 3rem;
       border-radius: 2rem;
@@ -69,7 +70,8 @@
 #contact-message {
   resize: none;
   border-radius: 1rem;
-  font-family: futura;
+  // font-family: futura;
+  font-family: "Merriweather";
   font-size: 1rem;
   padding: 0.75rem;
   height: 10rem;

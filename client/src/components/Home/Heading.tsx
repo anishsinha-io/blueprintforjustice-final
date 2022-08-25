@@ -27,10 +27,9 @@ const Heading = () => {
     <>
       <section className="app-heading">
         <div className={`app-heading__text ${ctx.darkmode ? "" : "darkmode"}`}>
-          Blueprint for Justice is an organization dedicated to helping victims
-          of police brutality and violence find the resources they need to both
-          get justice for the harm they faced and heal from trauma incurred with
-          a plethora of resources and stories of triumph.
+          Blueprint for Justice is a resource dedicated to supporting victims of
+          policy brutality and their affected communities, built around the
+          learnings and strategies from the Mothers of the Movement.
         </div>
         <img
           className="app-heading__img"
