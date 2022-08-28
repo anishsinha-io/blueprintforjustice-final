@@ -48,6 +48,7 @@ const Credits = () => {
         name="Sai Ravi"
         title="UX Designer"
         email="saishreyaravi@gmail.com"
+        href="https://saishreyaravi.com/"
       />
     </div>
   );
