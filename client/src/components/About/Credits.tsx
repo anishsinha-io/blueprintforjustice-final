@@ -35,6 +35,7 @@ const Credits = () => {
         name="Satveer Singh"
         title="UX Designer and Content Writer"
         email="satveerxsingh@gmail.com"
+        href="https://designlok.io"
       />
       <CreditBlock
         name="Alyssa Guo"

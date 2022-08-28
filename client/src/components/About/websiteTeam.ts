@@ -29,7 +29,7 @@ const websiteTeam: { title: string; name: string; href?: string }[] = [
   {
     title: "Designer",
     name: "Satveer Singh",
-    href: "",
+    href: "https://designlok.io",
   },
   {
     title: "Designer",
