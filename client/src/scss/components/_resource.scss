@@ -94,6 +94,9 @@
     text-align: center;
     font-family: "korolev";
     text-transform: uppercase;
+    & > h3 {
+      margin-top: 1.5rem;
+    }
   }
 }
 
