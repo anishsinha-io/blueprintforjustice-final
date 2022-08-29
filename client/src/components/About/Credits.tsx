@@ -30,6 +30,7 @@ const Credits = () => {
         name="Jacqueline Vo"
         title="Product Manager and Content Strategist"
         email="jackieqvo@gmail.com"
+        href="https://www.linkedin.com/in/jackieqvo/"
       />
       <CreditBlock
         name="Satveer Singh"
