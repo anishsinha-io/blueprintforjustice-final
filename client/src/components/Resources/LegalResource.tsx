@@ -95,17 +95,35 @@ const Law101Resource = () => {
               There are major differences in criminal and civil cases that are
               important to know. According to the Department of Justice,
               criminal cases are investigated and handled separately from civil
-              cases, even if they concern the same incident. In a criminal case,
-              the government brings a case against the accused person. In a
-              civil case, the case is brought against a governmental authority
-              or law enforcement agency. The evidence in a criminal case must
-              establish proof "beyond a reasonable doubt," while in civil cases,
-              the proof only needs to satisfy the lower standard of a
-              "preponderance of the evidence." Finally, in criminal cases, the
-              Department's goal is to bring justice to an alleged wrongdoer by
-              sending them to prison or other consequences. While in civil
-              cases, the Department's goal is to correct a law enforcement
-              agency's policies and practices that have been found to lead to
+              cases, even if they concern the same incident. In a{" "}
+              <a className={`inlinelink-no-href${ctx.darkmode ? "-dark" : ""}`}>
+                criminal case
+              </a>
+              , the government brings a case against the accused person. In a{" "}
+              <a className={`inlinelink-no-href${ctx.darkmode ? "-dark" : ""}`}>
+                civil case
+              </a>
+              , the case is brought against a governmental authority or law
+              enforcement agency. The evidence{" "}
+              <a className={`inlinelink-no-href${ctx.darkmode ? "-dark" : ""}`}>
+                in a criminal case
+              </a>{" "}
+              must establish proof "beyond a reasonable doubt,"{" "}
+              <a className={`inlinelink-no-href${ctx.darkmode ? "-dark" : ""}`}>
+                while in civil cases
+              </a>
+              , the proof only needs to satisfy the lower standard of a
+              "preponderance of the evidence." Finally,{" "}
+              <a className={`inlinelink-no-href${ctx.darkmode ? "-dark" : ""}`}>
+                in criminal cases
+              </a>
+              , the Department's goal is to bring justice to an alleged
+              wrongdoer by sending them to prison or other consequences. While{" "}
+              <a className={`inlinelink-no-href${ctx.darkmode ? "-dark" : ""}`}>
+                in civil cases
+              </a>
+              , the Department's goal is to correct a law enforcement agency's
+              policies and practices that have been found to lead to
             </div>
             <div
               className={`resource__subheading${ctx.darkmode ? "--dark" : ""}`}
@@ -116,9 +134,17 @@ const Law101Resource = () => {
               Retaliation from law enforcement is widely feared among families
               pursuing legal action and police accountability. Should you find
               yourself in a situation that involves further police misconduct,
-              you can file a complaint through this publication by the
-              Department of Justice (DOJ); this allows for anyone to file a
-              complaint with the criminal and civil enforcement.
+              you can file a complaint through this publication by the{" "}
+              <a
+                className={`inline-link${ctx.darkmode ? "-dark" : ""}`}
+                href="https://www.justice.gov/crt/addressing-police-misconduct-laws-enforced-department-justice"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Department of Justice
+              </a>{" "}
+              (DOJ); this allows for anyone to file a complaint with the
+              criminal and civil enforcement.
             </div>
             <div
               className={`resource__subheading${ctx.darkmode ? "--dark" : ""}`}
@@ -131,8 +157,16 @@ const Law101Resource = () => {
               footage is often vital in any case. Whether it is for the
               courtroom or in public, it is important to bring awareness to the
               experience. The National Conference of State Legislatures provides
-              a Body Worn Cameras Interactive Database. It is advised that body
-              camera footage is requested immediately.
+              a{" "}
+              <a
+                href="https://www.ncsl.org/research/civil-and-criminal-justice/body-worn-cameras-interactive-graphic.aspx#/"
+                target="_blank"
+                rel="noreferrer"
+                className={`inline-link${ctx.darkmode ? "-dark" : ""}`}
+              >
+                Body Worn Cameras Interactive Database
+              </a>
+              . It is advised that body camera footage is requested immediately.
             </div>
           </div>
         </div>
