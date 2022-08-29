@@ -18,8 +18,6 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import { shouldRefreshLinks } from "components/Resources/refresh";
-
 import HealingResource from "components/Resources/HealingResource";
 import LegalResource from "components/Resources/LegalResource";
 import ActionResource from "components/Resources/ActionResource";
@@ -33,9 +31,6 @@ import { ReactComponent as MenuIcon } from "assets/svg/menu-icon.svg";
 import { ReactComponent as MenuIconDark } from "assets/svg/menu-icon-dark.svg";
 
 import SettingsCtx from "components/ctx";
-import axios from "axios";
-import getBaseUrl from "config";
-import { setRefreshLinks } from "components/Resources/refresh";
 
 // type information required otherwise error will be thrown
 const resourceMap: { [category: string]: (props: any) => JSX.Element } = {
@@ -50,13 +45,6 @@ const resourceMap: { [category: string]: (props: any) => JSX.Element } = {
 const BaseResourcePage: React.FC<{ category: string }> = ({ category }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    // const refresh = async () => {
-    //   if (shouldRefreshLinks()) {
-    //     await axios.get(`${getBaseUrl()}/resources/refresh`);
-    //     setRefreshLinks();
-    //   }
-    // };
-    // refresh();
   }, []);
   const Resource = resourceMap[category];
 
@@ -66,6 +54,15 @@ const BaseResourcePage: React.FC<{ category: string }> = ({ category }) => {
     <section className="app-baseresource">
       <div className="app-baseresource__links">
         <ul className={`sidebar-links ${ctx.darkmode ? "sidebar-dark" : ""}`}>
+          <li
+            className={`${
+              category === "legal"
+                ? `current${ctx.darkmode ? "--dark" : ""}`
+                : ""
+            }`}
+          >
+            <Link to="/legal-aid">Legal Aid</Link>
+          </li>
           <li
             className={`${
               category === "healing"
@@ -93,15 +90,7 @@ const BaseResourcePage: React.FC<{ category: string }> = ({ category }) => {
           >
             <Link to="/taking-action">Taking Action</Link>
           </li>
-          <li
-            className={`${
-              category === "legal"
-                ? `current${ctx.darkmode ? "--dark" : ""}`
-                : ""
-            }`}
-          >
-            <Link to="/legal-aid">Legal Aid</Link>
-          </li>
+
           <li
             className={`${
               category === "media"
