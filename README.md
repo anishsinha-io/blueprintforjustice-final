@@ -1,6 +1,6 @@
 # BlueprintForJustice
 
-This website is meant to be a resource that is available to help victims of police brutality to get justice for the harm that they faced.
+This website is a resource that is available to help victims of police brutality to get justice for the harm that they faced.
 
 ### Team
 
