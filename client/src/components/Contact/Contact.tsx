@@ -92,7 +92,7 @@ const Contact = () => {
           className={`contact-inputs ${ctx.darkmode && "contact-inputs--dark"}`}
         >
           <legend>
-            <h3>Your message</h3>
+            <h3 className="contact-heading-legend">Your message</h3>
           </legend>
           <div className="contact-inputs__entry ">
             <label htmlFor="contact-name" className="contact-label">
