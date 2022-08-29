@@ -15,11 +15,13 @@
 # along with this program.  If not, see http://www.gnu.org/licenses/.
 #
 
-import requests
+import re
 import atexit
+import requests
 from app import get_conn, workdir
 from apscheduler.schedulers.background import BackgroundScheduler
 
+state_regex = r"(?i)\b(?:Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New\s+Hampshire|New\s+Jersey|New\s+Mexico|New\s+York|North\s+Carolina|North\s+Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Puerto\s+Rico|Rhode\s+Island|South\s+Carolina|South\s+Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West\s+Virginia|Virgin\s+Islands|Wisconsin|Wyoming|AL|AK|AZ|AR|CA|CZ|Colo|Conn|Del|DC|FL|GA|GU|HI|IL|ID|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY)\b"
 
 # determine validity of a link
 def ping(href: str) -> bool:
@@ -102,6 +104,15 @@ def get_space_links(space: str) -> dict:
         del row["valid"]
         if row_valid:
             out[row_category].append(row)
+    for k, _ in out.items():
+        out[k] = sorted(
+            out[k],
+            key=lambda d: (
+                re.findall(state_regex, d["text"])[0]
+                if (len(re.findall(state_regex, d["text"].lower())) > 0)
+                else d["text"]
+            ),
+        )
     out = {k: v for k, v in out.items() if len(v) > 0}
     return out
 

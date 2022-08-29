@@ -81,7 +81,7 @@ const Law101Resource = () => {
             </div>
             <div className="resource__content">
               In pursuing legal action, it is important to document everything
-              before beginning to ask questions; for example, a document from
+              before beginning to ask questions. For example, a document from
               the FBI could provide insight into how police reports are written
               to best communicate. Documenting the events that have occurred
               allows for faster communication and processing.
@@ -104,9 +104,8 @@ const Law101Resource = () => {
               "preponderance of the evidence." Finally, in criminal cases, the
               Department's goal is to bring justice to an alleged wrongdoer by
               sending them to prison or other consequences. While in civil
-              cases,the Department's goal is to correct a law enforcement
+              cases, the Department's goal is to correct a law enforcement
               agency's policies and practices that have been found to lead to
-              misconduct.
             </div>
             <div
               className={`resource__subheading${ctx.darkmode ? "--dark" : ""}`}
@@ -114,21 +113,12 @@ const Law101Resource = () => {
               Preparing For Retaliation
             </div>
             <div className="resource__content">
-              There are major differences in criminal and civil cases that are
-              important to know. According to the Department of Justice,
-              criminal cases are investigated and handled separately from civil
-              cases, even if they concern the same incident. In a criminal case,
-              the government brings a case against the accused person. In a
-              civil case, the case is brought against a governmental authority
-              or law enforcement agency. The evidence in a criminal case must
-              establish proof "beyond a reasonable doubt," while in civil cases,
-              the proof only needs to satisfy the lower standard of a
-              "preponderance of the evidence." Finally, in criminal cases, the
-              Department's goal is to bring justice to an alleged wrongdoer by
-              sending them to prison or other consequences. While in civil
-              cases,the Department's goal is to correct a law enforcement
-              agency's policies and practices that have been found to lead to
-              misconduct.
+              Retaliation from law enforcement is widely feared among families
+              pursuing legal action and police accountability. Should you find
+              yourself in a situation that involves further police misconduct,
+              you can file a complaint through this publication by the
+              Department of Justice (DOJ); this allows for anyone to file a
+              complaint with the criminal and civil enforcement.
             </div>
             <div
               className={`resource__subheading${ctx.darkmode ? "--dark" : ""}`}
@@ -136,21 +126,13 @@ const Law101Resource = () => {
               Body Camera Footage and the Need For Transparency
             </div>
             <div className="resource__content">
-              There are major differences in criminal and civil cases that are
-              important to know. According to the Department of Justice,
-              criminal cases are investigated and handled separately from civil
-              cases, even if they concern the same incident. In a criminal case,
-              the government brings a case against the accused person. In a
-              civil case, the case is brought against a governmental authority
-              or law enforcement agency. The evidence in a criminal case must
-              establish proof "beyond a reasonable doubt," while in civil cases,
-              the proof only needs to satisfy the lower standard of a
-              "preponderance of the evidence." Finally, in criminal cases, the
-              Department's goal is to bring justice to an alleged wrongdoer by
-              sending them to prison or other consequences. While in civil
-              cases,the Department's goal is to correct a law enforcement
-              agency's policies and practices that have been found to lead to
-              misconduct.
+              Each law enforcement agency has different processes and standards
+              around body camera footage. Getting access to such records and
+              footage is often vital in any case. Whether it is for the
+              courtroom or in public, it is important to bring awareness to the
+              experience. The National Conference of State Legislatures provides
+              a Body Worn Cameras Interactive Database. It is advised that body
+              camera footage is requested immediately.
             </div>
           </div>
         </div>
